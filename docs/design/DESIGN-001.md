@@ -1,0 +1,29 @@
+# DESIGN-001 — Dois cartões permanentes
+
+**Status: conceito visual aprovado; dimensões em validação.** A referência enviada pelo usuário orienta o arranjo, não deve ser copiada literalmente nem redistribuída sem autorização.
+
+## Cartão superior — Mapa
+
+- Destinos, Pins, linha/rota e seleção geográfica.
+- Controles leves de mapa e acesso contextual a viagem/participantes.
+- O mapa é uma superfície de trabalho, não só ilustração.
+- Evitar formulários grandes e informações financeiras sobre o mapa.
+
+## Cartão inferior — Conteúdo e navegação
+
+- Botão de adição, título do contexto e botão de relógio no próprio cabeçalho.
+- **Título selecionado centralizado**, destinos vizinhos parcialmente visíveis.
+- Detalhes, registros, fotos e stamps dentro de um corpo de **scroll vertical**.
+- Tocar um lugar atualiza o mapa, mantendo a mesma tela.
+
+## O que não construir
+
+- Tab bar fixa abaixo dos cartões.
+- Dashboard anterior ao mapa.
+- Menu lateral principal para as cinco áreas.
+- Cinco pilhas de telas por categoria.
+- Liquid Glass aplicado indiscriminadamente a textos e conteúdo.
+
+## Composição
+
+Dois cartões ocupam quase toda a viewport, separados por pequeno intervalo/puxador. O estado equilibrado é inicial. Arraste **apenas o puxador** para alternar proporção; rolar o conteúdo nunca redimensiona. Respeitar barras/áreas seguras do sistema.
