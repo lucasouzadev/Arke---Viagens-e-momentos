@@ -2,6 +2,8 @@
 
 **Status:** proposta para revisão. Não substitui a direção já aprovada em [DESIGN-003](DESIGN-003.md). Nenhum arquivo de fonte ou imagem externa é redistribuído.
 
+**Aprofundamento:** a definição detalhada da proposta de marca, paleta Light/Dark, stamps, diferenças de plataformas e critérios de aceite está centralizada no [índice BRAND-001](../brand/README.md). Evitar criar uma segunda fonte conflitante para os tokens.
+
 ## Identidade conjunta
 
 Arke deve ser reconhecível **pela composição de dois cartões, relação mapa/conteúdo, linguagem de viagens e stamps**, não por copiar pixels entre plataformas. A segunda plataforma não é uma conversão automática da primeira.
@@ -17,7 +19,7 @@ Arke deve ser reconhecível **pela composição de dois cartões, relação mapa
 | primaryText | títulos e ação atual | legível em claro/escuro |
 | secondaryText | descrição/metadata | contraste suficiente |
 | selectedPlace | Pin e título selecionados | reforçar com escala/forma |
-| accent | ações primárias | pendente de aprovação |
+| accent | ações primárias | ver THEME-001, ainda proposto |
 | status | erro/sucesso/atenção | nunca depender somente de cor |
 
 ### Cores experimentais, NÃO finais
@@ -27,7 +29,7 @@ Arke deve ser reconhecível **pela composição de dois cartões, relação mapa
 - Paper: `#FFFFFF` — cartão de conteúdo.
 - Mist: `#F2F5F6` — camada auxiliar.
 
-**Não usar Sky como mapa geográfico simplificado definitivo; o mapa precisa revelar ruas, lugares e informações úteis.** A paleta pode aparecer na moldura, sobreposição ou modo ilustrado.
+**Não usar Sky como mapa geográfico simplificado definitivo; o mapa precisa revelar ruas, lugares e informações úteis.** O aprofundamento de tokens foi movido para [THEME-001](../brand/THEME-001.md). Estes valores são referências anteriores, não tokens contraditórios aprovados.
 
 ## Tipografia e alinhamento
 

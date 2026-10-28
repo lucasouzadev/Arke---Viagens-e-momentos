@@ -1,41 +1,43 @@
-# Questões abertas — não tratar propostas como aprovadas
+# Questões abertas — propostas ainda não são decisões
 
-## DESIGN-004 e DESIGN-005
+## Marca e sistema visual
 
-- O relógio será circular de verdade, popover transformado ou versão híbrida com fallback de lista?
-- Se a pessoa deslizar rapidamente mais de um lugar, a câmera do mapa segue apenas seleção final?
-- Qual feedback tátil é útil, e como substituí-lo com Reduce Motion?
-- Os três detents são suficientes em tablets/landscape e fontes muito grandes?
-- Marca, tipografia, ícones, cores dark e contraste final.
-- Como serão os stamps originais e quais direitos de uso serão aplicáveis?
+- A marca gráfica será rota, selo ou tipografia? Ver [BRAND-001](brand/BRAND-001.md).
+- A expressão “Onde vamos?” será nome de produto, slogan ou só pergunta editorial?
+- Pesquisar disponibilidade de nome/marca e direitos de uso antes de publicação comercial.
+- Aprovar paleta light/dark, contraste sobre mapa real e alternativa de alto contraste.
+- Avaliar se cores de atmosfera azuladas no dark mode devem ser reduzidas ou substituídas.
+- Selecionar tipografia e política de licença, desenho de ícones, favicon, avatar e ícone de app.
+- Definir stamp original: variante padrão, exportação, direitos de fotografias, tratamento de EXIF e compartilhamento.
+- Definir se estampas de memórias integram Place, Trip ou ambos na UI.
 
-## UX-001
+## Interação e produto
 
-- Pin salvo fica na coleção pessoal quando removido de uma Trip?
-- Autosave, duração da retenção de drafts e resolução de conflitos offline.
-- Descoberta por pesquisa, seleção manual ou importação de link no primeiro recorte.
-- Como distribuir mapas e conteúdo quando teclado e alto zoom de texto reduzem viewport?
+- O relógio será realmente circular, popover transformado ou híbrido com fallback acessível?
+- A câmera do mapa segue apenas a seleção final em swipe rápido?
+- Qual feedback tátil é útil? Como respeitar Remove Animations?
+- Três detents são suficientes em tablets, landscape e fontes grandes?
+- Pin pessoal salvo fica independente ao ser removido de Trip?
+- Autosave e retenção de drafts; pesquisa/localização/link como primeira entrada.
 
-## GROUP-001
+## Viagem em grupo
 
-- Modo convidado, conta e convites; links temporários e expiração.
-- Papéis owner/editor/viewer são suficientes? Quem pode convidar?
-- Limites de visibilidade de fotos, despesas e contribuições de cada membro.
-- Revogação, transferência de Trip e retenção de dados compartilhados.
-- Resolução de duas edições concorrentes em itens financeiros.
+- Modo convidado/contas e convites; expiração e revogação.
+- Papéis owner/editor/viewer; quem pode convidar?
+- Visibilidade de mídia, despesas e contribuições pessoais.
+- Transferência de titularidade e resolução de conflitos simultâneos.
 
-## FINANCE-001
+## Gastos e cofrinho
 
-- Moeda-base por viagem, múltiplas moedas e cotação (se houver).
-- Rateio em partes iguais, por participação ou customizado.
-- Cofrinho somente pessoal no primeiro recorte ou agregados de grupo com opt-in?
-- Moderação/retificação de avaliações e verificação opcional de stamps.
+- Moeda-base, múltiplas moedas, conversão e regras de rateio.
+- Cofrinho coletivo é apenas progresso agregado com opt-in?
+- Tratamento de edições financeiras e contribuições declarativas.
 
-## Engenharia e legal
+## Engenharia e direitos
 
-- Fornecedor de mapas Android, chaves e custos; offline de mapas versus registros.
-- Termos/privacidade e obrigações LGPD para contas/grupos.
-- Licença de código e direitos de marca/assets.
-- Identificadores Apple/Android, assinaturas e processos de release somente após iniciar código.
+- Fornecedor de mapas Android, custos, credenciais e offline.
+- Termos, privacidade e LGPD para dados de grupo e localização.
+- Licenças de código e direitos de marca/assets.
+- Identificadores Apple/Android e releases apenas após iniciar código.
 
-Decisões devem virar ADRs antes de serem promovidas a requisitos. Ver [Roadmap](ROADMAP.md).
+Decisões devem virar ADRs antes de promover propostas a requisitos. Ver [Roadmap](ROADMAP.md).

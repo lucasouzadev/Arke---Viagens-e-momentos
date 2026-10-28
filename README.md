@@ -2,38 +2,37 @@
 
 **Um mapa, uma viagem, tudo no mesmo lugar.**
 
-O Arke é um projeto open source de planejamento de viagens solo e em grupo. A proposta reúne Pins, roteiros, gastos, metas de economia, avaliações e memórias em uma única interface espacial.
+O Arke é um projeto aberto de planejamento de viagens solo e em grupo. Pins, roteiros, gastos, metas de economia, avaliações e memórias compõem uma única experiência centrada no mapa.
 
-> **Estado do projeto:** documentação de produto e design. A etapa **DOCS-002** está em revisão. Não há app publicado, backend, workflows de CI, integrações financeiras nem builds distribuídos.
+> **Estado atual:** projeto **documentation-first**, com propostas de interface, marca e fluxos em revisão. Não há app, backend, CI de build, distribuição ou integração financeira nesta entrega.
 
 ## Princípios aprovados
 
-- **Uma tela, dois cartões:** mapa e Pins no superior; navegação contextual e conteúdo no inferior.
-- **Sem tab bar:** cinco contextos selecionados por um relógio dentro do segundo cartão.
-- **Carrossel horizontal** de lugares, com anterior/próximo parcialmente visíveis; **scroll vertical** para explorar registros e stamps.
-- **Três posições** do painel inferior: Explorar, Equilibrado e Detalhes.
-- **Pins podem existir antes de viagens**; a mesma viagem pode ser individual ou compartilhada.
-- **UI nativa independente**: Swift/SwiftUI (Liquid nos controles) e Kotlin/Compose (flat no Android).
-- **Documentation-first:** nada de código de produção sem nova autorização.
+- **Uma tela principal e dois cartões**: mapa/Pins acima, navegação e conteúdo abaixo.
+- **Sem tab bar tradicional:** relógio de cinco contextos dentro do segundo cartão.
+- **Carrossel horizontal** finito de lugares; **scroll vertical** para atividades, detalhes e stamps.
+- **Três posições do painel:** Explorar, Equilibrado e Detalhes.
+- **Pins independentes de viagens**; mesma viagem pode ser solo ou compartilhada.
+- **iOS nativo em SwiftUI, Android nativo em Compose**, sem framework cross-platform para UI.
+- **Documentação antes do código**, até nova autorização.
 
-## Comece aqui
+## Documentos para revisão
 
-Consulte o [índice integral da documentação](docs/INDEX.md).
-
-| Tema | Documento |
+| Área | Documento |
 | --- | --- |
-| Visão de produto | [Visão](docs/produto/VISAO.md) |
-| Dois cartões aprovados | [DESIGN-001](docs/design/DESIGN-001.md) |
-| Relógio e carrossel aprovados | [DESIGN-002](docs/design/DESIGN-002.md) |
-| Linguagem iOS/Android | [DESIGN-003](docs/design/DESIGN-003.md) |
-| **Proposta de física e gestos** | [DESIGN-004](docs/design/DESIGN-004.md) |
-| **Proposta de sistema visual** | [DESIGN-005](docs/design/DESIGN-005.md) |
-| **Estados vazios e rascunhos** | [UX-001](docs/produto/UX-001-ESTADOS.md) |
-| **Colaboração** | [GROUP-001](docs/produto/GROUP-001.md) |
-| **Gastos e Cofrinho** | [FINANCE-001](docs/produto/FINANCE-001.md) |
-| Testes futuros | [QUALITY-001](docs/qualidade/QUALIDADE.md) · [QUALITY-002](docs/qualidade/MATRIZ-UX-002.md) |
-| Fases | [Roadmap](docs/ROADMAP.md) |
+| Navegação completa | [Índice](docs/INDEX.md) |
+| Referência estrutural | [DESIGN-001](docs/design/DESIGN-001.md) |
+| Relógio/carrossel | [DESIGN-002](docs/design/DESIGN-002.md) e [DESIGN-004](docs/design/DESIGN-004.md) |
+| Linguagem visual | [DESIGN-003](docs/design/DESIGN-003.md) e [DESIGN-005](docs/design/DESIGN-005.md) |
+| **Marca proposta** | [BRAND-001](docs/brand/BRAND-001.md) |
+| **Paleta Light / Dark** | [THEME-001](docs/brand/THEME-001.md) |
+| **Stamps de memória** | [STAMPS-001](docs/brand/STAMPS-001.md) |
+| **Equivalência iOS/Android** | [PLATFORM-001](docs/brand/PLATFORM-001.md) |
+| **Auditoria visual futura** | [BRAND-QUALITY-001](docs/brand/BRAND-QUALITY-001.md) |
+| Viagens em grupo | [GROUP-001](docs/produto/GROUP-001.md) |
+| Gastos e cofrinho | [FINANCE-001](docs/produto/FINANCE-001.md) |
+| Roadmap | [Roadmap](docs/ROADMAP.md) |
 
-Leia [CONTRIBUTING.md](CONTRIBUTING.md) e [OPEN_SOURCE.md](OPEN_SOURCE.md). A licença definitiva ainda será escolhida e imagens externas de referência não devem ser redistribuídas sem autorização.
+Consulte [CONTRIBUTING.md](CONTRIBUTING.md) e [OPEN_SOURCE.md](OPEN_SOURCE.md). Código e marca ainda não possuem licença final aprovada. Imagens e fontes externas não devem ser distribuídas sem autorização.
 
-**A palavra “proposta” importa:** os documentos novos não aprovam automaticamente papéis de grupo, sistema financeiro, paleta ou animações.
+**Propostas novas não são decisões aceitas automaticamente.**
