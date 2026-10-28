@@ -20,7 +20,7 @@
 | Marco | Estado | Evidência / restrição |
 | --- | --- | --- |
 | M0 — governança agents e documentação | **em revisão** | `AGENTS.md`, ROADMAP unificado, workflow, handoff/status e changelog propostos neste PR |
-| M0 — baselines interdisciplinares | **em revisão** | prompt obrigatório, G-01..G-14, threat model, arquitetura, acessibilidade, segurança e jurídico na mesma branch |
+| M0 — baselines interdisciplinares | **em revisão** | prompt obrigatório, G-01..G-15, threat model, arquitetura, acessibilidade, segurança e jurídico na mesma branch |
 | M1 — contratos de UI | **planejado** | DESIGN-001/002/003 aprovados em conceito; DESIGN-004/005 propostos |
 | M2 — arquitetura nativa | **planejado** | direções SwiftUI/Compose documentadas; sem código |
 | M3 — domínio de viagens | **planejado** | entidades, grupo e finanças em proposta |

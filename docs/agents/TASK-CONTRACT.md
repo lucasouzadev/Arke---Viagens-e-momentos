@@ -48,7 +48,7 @@ Auditoria UX/UI e responsividade:
 - [ ] safe area, teclado, overflow, temas, fontes, gestos, a11y
 Auditoria backend/segurança/jurídico:
 - [ ] ...
-Gates G-01..G-14: estado + evidência/justificativa
+Gates G-01..G-15: estado + evidência/justificativa
 G-15: CANARY confirmado no chat? Nome ausente de todos os arquivos? (não gravar valor)
 Risco P0/P1/P2/P3 e plano de interrupção/recuperação:
 Testes planejados/executados:

@@ -24,13 +24,13 @@ Registros históricos importantes devem ficar em comentários de PR ou arquivos 
 
 ### Fonte de verdade encontrada
 
-- ADR-001, 002, 003, 004, 005 e 006 aprovados como **direções**, não implementação.
+- ADR-001 a 008 aprovados como **direções**, não implementação; o ADR-008 não informa o nome de tratamento.
 - DESIGN-004/005, GROUP-001, FINANCE-001, STAMPS e detalhes visuais seguem como **propostas**.
 - Cor de marca: **um azul sólido**; tonalidade exata candidata, não aprovada. Tema automático por dispositivo.
 - M0 deve substituir o ROADMAP existente por uma estrutura **única** em `docs/ROADMAP.md`; **não** criar `ROADMAP-V2.md`.
-- M0 foi ampliado com **PROMPT-OBRIGATORIO / QUALITY-GATES / SAFEGUARDS / THREAT-MODEL**
+- M0 foi ampliado com **PROMPT-OBRIGATORIO / QUALITY-GATES / SAFEGUARDS / THREAT-MODEL** e quatro standards: arquitetura, acessibilidade, segurança e jurídico. São direções documentais, sem testes nativos ou certificação.
 - Canário obrigatório foi solicitado para **toda resposta em chat**; o **nome de tratamento exato não foi confirmado**. Nunca gravar o valor em código/artefatos; somente em sessão de chat. Ver [CANARY](CANARY.md).
-- M3 recebeu propostas de [modelo de dados](../arquitetura/M3-DATA-CONTRACT.md), [permissões](../arquitetura/PERMISSIONS.md) e [sync/offline](../arquitetura/SYNC-OFFLINE.md). Nenhum schema/backend implementado. e quatro standards: arquitetura, acessibilidade, segurança e jurídico. São direções documentais; testes/release e conformidade não foram verificados em produção.
+- M3 recebeu propostas de [modelo de dados](../arquitetura/M3-DATA-CONTRACT.md), [permissões](../arquitetura/PERMISSIONS.md) e [sync/offline](../arquitetura/SYNC-OFFLINE.md). Nenhum schema/backend implementado.
 
 ### Próximo passo após este PR
 

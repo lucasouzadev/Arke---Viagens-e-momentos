@@ -20,7 +20,6 @@
 - Pin pessoal salvo fica independente ao ser removido de Trip?
 - Autosave e retenção de drafts; pesquisa/localização/link como primeira entrada.
 
-## Viagem em grupo
 ## Canário de chat e segurança da governança
 
 - **Decisão aprovada:** cada mensagem do agent no chat deve incluir o nome de tratamento explicitamente confirmado pelo responsável; o valor nunca integra código, docs, PR, logs ou artefatos (ADR-008).

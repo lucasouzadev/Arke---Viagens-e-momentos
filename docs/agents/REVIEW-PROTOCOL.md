@@ -28,12 +28,12 @@
 - [ ] Safe areas, teclado, fontes ampliadas, landscape, tablet, overflow, overlap, acessibilidade, offline e estados de erro.
 - [ ] Mudanças backend/privacidade/finanças/permissões avaliadas.
 - [ ] Testes/E2E quando houver app; documentação pura: “não executados — não aplicáveis nesta fase”.
-- [ ] Gates **G-01..G-14** preenchidos e G-15 com PASSOU/FALHOU/BLOQUEADO/NÃO EXECUTADO/NÃO APLICÁVEL e evidência/justificativa ([QUALITY-GATES](QUALITY-GATES.md)).
+- [ ] Gates **G-01..G-15** preenchidos com PASSOU/FALHOU/BLOQUEADO/NÃO EXECUTADO/NÃO APLICÁVEL e evidência/justificativa ([QUALITY-GATES](QUALITY-GATES.md)).
 - [ ] Threat model para grupos, localização, mídia, autorização, dados ou redes; plano de contenção ([SAFEGUARDS](SAFEGUARDS.md)).
 - [ ] Acessibilidade e segurança avaliadas segundo [ACCESSIBILITY](../standards/ACCESSIBILITY-UI.md) e [OWASP baseline](../standards/SECURITY-PRIVACY.md), sem alegar certificação.
 - [ ] Avaliação legal/privacidade do contexto registrada, e revisão humana quando houver risco ([LEGAL](../standards/LEGAL-COMPLIANCE.md)).
 
-## 4. Política de PR**Canário:** validar que a forma de tratamento confirmada aparece nas respostas do chat, mas **nunca** em commits, markdown público, descrição do PR, código, logs ou release notes. Se o nome não estiver confirmado, G-15 fica bloqueado; não inferir identidade.
+**Canário:** validar que a forma de tratamento confirmada aparece nas respostas do chat, mas **nunca** em commits, documentação, descrição do PR, código, logs ou notas de release. Se o nome não estiver confirmado, G-15 fica bloqueado; não inferir identidade.
 
 ## 4. Política de PR
 
