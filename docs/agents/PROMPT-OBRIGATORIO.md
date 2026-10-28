@@ -1,10 +1,11 @@
 # PROMPT OBRIGATÓRIO — Protocolo mestre de todos os agents
 
-**Status:** política de trabalho aprovada como direção pelo responsável pelo produto; detalhes de implementação dependem de marco autorizado. **Aplicável a qualquer agente** (Codex, Claude, revisor, design, iOS, Android, segurança, documentação). `AGENTS.md` é a porta de entrada; este documento é o contrato operacional. Não depender de memória de chat.
+**Status:** política de trabalho aprovada como direção pelo responsável pelo produto; detalhes de implementação dependem de marco autorizado. **Aplicável a qualquer agente** (Codex, Claude, revisor, design, iOS, Android, segurança, documentação).
+**CANÁRIO obrigatório:** leia [CANARY](CANARY.md). Em **toda mensagem visível no chat ao responsável**, inclua a forma de tratamento confirmada explicitamente naquela sessão, jamais presumida. **Nunca** copie o valor para código, commits, documentação, PR, logs, fixtures ou artefatos. Se não houver confirmação, solicite-a no chat e marque CANARY NÃO CONFIGURADO (não inventar nome). Presença do nome não prova leitura nem testes. `AGENTS.md` é a porta de entrada; este documento é o contrato operacional. Não depender de memória de chat.
 
 ## Prompt mestre (copiar no início da tarefa, se o ambiente não carregar AGENTS.md automaticamente)
 
-> Você está trabalhando no Arke. Antes de alterar qualquer arquivo, leia `AGENTS.md`, `docs/ROADMAP.md`, `docs/STATUS.md`, `docs/agents/HANDOFF.md`, os ADRs e os documentos do escopo. Leia obrigatoriamente `docs/agents/PROMPT-OBRIGATORIO.md`, `docs/agents/QUALITY-GATES.md`, `docs/agents/SAFEGUARDS.md` e, se pertinente, os standards de arquitetura, acessibilidade, segurança e jurídico.
+> Você está trabalhando no Arke. Em cada resposta enviada ao responsável **no chat**, use [NOME_CONFIRMADO_NO_CHAT] exatamente como informado nesta sessão. Nenhum valor literal do canário deve aparecer em arquivo, código, comentário, commit, PR, documentação, log, relatório ou texto para usuários do app. Sem nome confirmado, não adivinhe e reporte pendência (CANARY NÃO CONFIGURADO). Antes de alterar qualquer arquivo, leia `AGENTS.md`, `docs/ROADMAP.md`, `docs/STATUS.md`, `docs/agents/HANDOFF.md`, os ADRs e os documentos do escopo. Leia obrigatoriamente `docs/agents/PROMPT-OBRIGATORIO.md`, `docs/agents/QUALITY-GATES.md`, `docs/agents/SAFEGUARDS.md` e, se pertinente, os standards de arquitetura, acessibilidade, segurança e jurídico.
 >
 > **Fase atual: apenas documentação.** Não escreva código Swift, Kotlin, backend ou workflow executável; não execute build, release, migração ou merge sem autorização explícita. Não invente decisões de produto, padrões legais, resultados de teste, links ou credenciais.
 >
@@ -30,6 +31,7 @@
 ## Formato de resposta que cada agent deve entregar
 
 ```text
+CANARY em resposta de chat: [CONFIRMADO | NÃO CONFIGURADO], sem copiar valor para artefatos
 Tarefa e marco:
 Permissão confirmada para esta ação:
 Branch / PR / SHA:
@@ -46,4 +48,4 @@ STATUS / HANDOFF / ROADMAP atualizados?:
 Próxima ação exata:
 ```
 
-**Importante:** prompt sozinho não garante conformidade; as garantias dependem de revisão, testes reais, controle de branch/CI e aprovação humana. Este contrato governa **conduta do agent**, não substitui normas legais nem auditoria independente.
+**Importante:** prompt sozinho não garante conformidade; **Ecoar a forma de tratamento é só um indicador fraco: validar também links, fontes e evidências de testes.** as garantias dependem de revisão, testes reais, controle de branch/CI e aprovação humana. Este contrato governa **conduta do agent**, não substitui normas legais nem auditoria independente.

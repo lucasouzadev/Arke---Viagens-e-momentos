@@ -50,5 +50,10 @@ Fotografias e stamps pessoais não passam automaticamente a compartilhados ao vi
 Cada consulta/escrita ao backend futuro deve filtrar por vínculo e visibilidade **no servidor**, não apenas ocultar botões. Participar de grupo nunca habilita GPS ou upload de contatos.
 
 ## Questões abertas
+## Detalhamento técnico de autorização proposto
+
+Veja [PERMISSIONS](../arquitetura/PERMISSIONS.md) para escopos e testes de acesso entre Trips e [SYNC-OFFLINE](../arquitetura/SYNC-OFFLINE.md) para revogação de membro durante edição offline. Esses documentos **não aprovam** owner/editor/viewer como papéis finais.
+
+## Questões abertas
 
 Autenticação local/guest, convite por link, validade, papel inicial, transferência de titularidade, exclusão de mídia e tratamento de cópias em outros dispositivos.

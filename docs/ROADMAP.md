@@ -48,6 +48,7 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 | M0-STD-01 | [PROMPT OBRIGATÓRIO](agents/PROMPT-OBRIGATORIO.md), [QUALITY-GATES](agents/QUALITY-GATES.md) e [SAFEGUARDS](agents/SAFEGUARDS.md) | protocolos de execução, prova, interrupção e recuperação exigíveis em toda tarefa | Em revisão |
 | M0-STD-02 | [Arquitetura](standards/ARCHITECTURE-CODE.md), [Acessibilidade](standards/ACCESSIBILITY-UI.md), [Segurança](standards/SECURITY-PRIVACY.md) e [Jurídico](standards/LEGAL-COMPLIANCE.md) | baselines por domínio + referências oficiais e revisão humana | Em revisão |
 | M0-RISK-01 | [Threat model](agents/THREAT-MODEL.md) | formulário de análise de risco antes de dados pessoais, convites, backend e mídia | Em revisão |
+| M0-CANARY-01 | [Canário de chat](agents/CANARY.md) | nome somente nas respostas privadas do chat; nunca em código/artefatos; comprovantes de leitura separados | **direção aprovada; nome pendente de confirmação** |
 
 **M0 concluído somente após revisão, aprovação e integração verificadas.** O trabalho documental anterior DOCS-001/DOCS-002/BRAND-001 permanece rastreável nas especificações, não constitui versão do roadmap separada.
 
@@ -80,6 +81,9 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 | M3-FINANCE-01 | gastos, cofrinho declarativo, moedas e rateio | Proposto |
 | M3-MEMORY-01 | avaliações, fotos, stamps e direitos de mídia | Proposto |
 | M3-SYNC-01 | política de conflito/autoria e retenção | Proposto |
+| M3-DATA-01 | [M3-DATA-CONTRACT](arquitetura/M3-DATA-CONTRACT.md) | Em revisão como proposta |
+| M3-AUTH-01 | [PERMISSIONS](arquitetura/PERMISSIONS.md), papel e visibilidade | Em revisão como proposta |
+| M3-SYNC-02 | [SYNC-OFFLINE](arquitetura/SYNC-OFFLINE.md), operações e conflito | Em revisão como proposta |
 
 ### M4 — Qualidade, automação e atualização
 
@@ -101,7 +105,7 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 - **BRAND-001**: linguagem, stamps, paleta simplificada → M1-DESIGN-01.
 - **DESIGN-001/002/003**: decisões de estrutura e direção visual → insumos de M1/M2.
 - **QUALITY-001/002**: base de revisão → critérios de M4, aplicáveis desde M0.
-- **PROMPT-OBRIGATORIO / QUALITY-GATES / SAFEGUARDS**: regras transversais que começam em M0 e valem para todo marco, com execução de testes nativos apenas após autorização.
+- **PROMPT-OBRIGATORIO / QUALITY-GATES / SAFEGUARDS**: regras transversais e **CANARY (chat-only)** que começam em M0 e valem para todo marco, com execução de testes nativos apenas após autorização.
 - **Standards de arquitetura, acessibilidade, segurança e jurídico**: checklists de risco e desenho; não equivalem a certificações ou parecer jurídico.
 - **BUILD-001**: plano de releases futuro → M4, **não um workflow configurado**.
 

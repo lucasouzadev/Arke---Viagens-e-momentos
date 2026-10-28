@@ -13,6 +13,7 @@ Estamos preparando o Arke para ajudar pessoas a organizar viagens sozinhas ou co
 - **Um visual mais limpo:** escolhemos usar apenas um azul de marca, com o restante acompanhando o tema do seu celular.
 - **Experiências de viagem:** organizamos como pessoas poderão guardar lugares e montar viagens sozinhas ou em grupo.
 - **Próximos passos mais claros:** criamos orientações obrigatórias para organizar e revisar cada etapa, incluindo cuidado com acessibilidade, privacidade e segurança, antes de começar a desenvolver o aplicativo.
+- **Dados protegidos desde o planejamento:** detalhamos como separar informações pessoais, viagens em grupo e alterações feitas sem conexão. São apenas planos, não recursos disponíveis.
 
 > Essas novidades são do **planejamento**. O Arke ainda não está disponível para uso.
 

@@ -21,6 +21,13 @@
 - Autosave e retenção de drafts; pesquisa/localização/link como primeira entrada.
 
 ## Viagem em grupo
+## Canário de chat e segurança da governança
+
+- **Decisão aprovada:** cada mensagem do agent no chat deve incluir o nome de tratamento explicitamente confirmado pelo responsável; o valor nunca integra código, docs, PR, logs ou artefatos (ADR-008).
+- **Pendente:** a forma exata de tratamento será informada pelo responsável na conversa da sessão. Não inferir pelo GitHub.
+- **Validação:** nome é sinal simples de protocolo, não prova anti-alucinação; revisar fontes, SHA, testes e evidências.
+
+## Viagem em grupo
 
 - Modo convidado/contas e convites; expiração e revogação.
 - Papéis owner/editor/viewer; quem pode convidar?

@@ -30,6 +30,7 @@ Qualquer teste não executado em uma tarefa de implementação que dele dependa 
 | G-12 | Testes/regressão | Testes unitários, contratos, E2E e screenshots aplicáveis realizados? | links/logs/execução |
 | G-13 | Operação/release | Deploy seguro, assinatura, rollback e versionamento confiáveis? | plano/execução real |
 | G-14 | Continuidade/comunicação | STATUS/HANDOFF/ROADMAP/changelog consistentes? | links e revisão editorial |
+| G-15 | Canário privado de chat | Cada resposta ao responsável incluiu nome explicitamente confirmado? O nome ficou ausente de qualquer arquivo/PR/código/log? | verificação da conversa + auditoria do diff, **sem transcrever nome** |
 
 Cada gate deve ter responsável por revisão e **resultado textual**, jamais simplesmente caixas marcadas sem justificativa.
 
@@ -49,7 +50,7 @@ Cada gate deve ter responsável por revisão e **resultado textual**, jamais sim
 - Task ID / milestone / autorização:
 - Mudança, dependências e ADRs:
 - Impacto iOS / Android / backend:
-- G-01 .. G-14: estado + evidência ou justificativa
+- G-01 .. G-15: estado + evidência ou justificativa
 - Matriz de viewport e a11y:
 - Testes executados + resultados + ambiente:
 - Testes não executados / justificativa:
@@ -66,4 +67,4 @@ Não prometer “100% livre de bugs” ou “compliance garantida”. Ao publica
 
 Uma checklist em Markdown não impede tecnicamente merge. Quando CI for autorizado no futuro, automatizar verificações **que são automatizáveis** (lint, teste, SAST, secrets, dependências, builds, screenshots quando possível). UX, a11y, arquitetura, privacidade e jurídico precisam adicionalmente de revisão humana. Não criar Actions nesta fase.
 
-Links: [PROMPT](PROMPT-OBRIGATORIO.md), [SAFEGUARDS](SAFEGUARDS.md), [ACESSIBILIDADE](../standards/ACCESSIBILITY-UI.md), [ARQUITETURA](../standards/ARCHITECTURE-CODE.md), [SEGURANÇA](../standards/SECURITY-PRIVACY.md), [JURÍDICO](../standards/LEGAL-COMPLIANCE.md).
+Links: [PROMPT](PROMPT-OBRIGATORIO.md), [CANARY](CANARY.md), [SAFEGUARDS](SAFEGUARDS.md), [ACESSIBILIDADE](../standards/ACCESSIBILITY-UI.md), [ARQUITETURA](../standards/ARCHITECTURE-CODE.md), [SEGURANÇA](../standards/SECURITY-PRIVACY.md), [JURÍDICO](../standards/LEGAL-COMPLIANCE.md).

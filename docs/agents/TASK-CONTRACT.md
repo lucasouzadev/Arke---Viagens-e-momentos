@@ -22,7 +22,8 @@
 | `notas publicas` | mudou o usuário? sim/não; texto leigo candidato |
 | `handoff` | pendências e instrução para próxima pessoa/agente |
 | `risco` | P0/P1/P2/P3, ameaça/impacto e salvaguarda |
-| `gates` | G-01..G-14 de [QUALITY-GATES](QUALITY-GATES.md), estado e evidência |
+| `gates` | G-01..G-15 de [QUALITY-GATES](QUALITY-GATES.md), estado e evidência |
+| `canarioChat` | configuração efêmera fornecida pelo responsável **somente no chat**; documento apenas registra status sem nome |
 | `compliance` | LGPD/LBI/loja/licenças aplicáveis ou justificativa de não aplicabilidade |
 
 ## Modelo copiável
@@ -48,6 +49,7 @@ Auditoria UX/UI e responsividade:
 Auditoria backend/segurança/jurídico:
 - [ ] ...
 Gates G-01..G-14: estado + evidência/justificativa
+G-15: CANARY confirmado no chat? Nome ausente de todos os arquivos? (não gravar valor)
 Risco P0/P1/P2/P3 e plano de interrupção/recuperação:
 Testes planejados/executados:
 - Executado:

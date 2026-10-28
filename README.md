@@ -31,6 +31,8 @@ Veja o [**CHANGELOG — Novidades do Arke**](CHANGELOG.md), escrito sem linguage
 | Situação atual | [STATUS](docs/STATUS.md) |
 | Instruções dos agents | [AGENTS.md](AGENTS.md) |
 | Prompt universal dos agents | [PROMPT-OBRIGATORIO](docs/agents/PROMPT-OBRIGATORIO.md) |
+| Canário privado de chat | [CANARY](docs/agents/CANARY.md) — nenhuma identificação pessoal registrada no repo |
+| Contratos de dados propostos | [M3 Data](docs/arquitetura/M3-DATA-CONTRACT.md) · [Permissões](docs/arquitetura/PERMISSIONS.md) · [Sync](docs/arquitetura/SYNC-OFFLINE.md) |
 | Critérios de segurança e qualidade | [QUALITY-GATES](docs/agents/QUALITY-GATES.md) · [SAFEGUARDS](docs/agents/SAFEGUARDS.md) |
 | Padrões arquiteturais e legais | [Arquitetura](docs/standards/ARCHITECTURE-CODE.md) · [Acessibilidade](docs/standards/ACCESSIBILITY-UI.md) · [Segurança](docs/standards/SECURITY-PRIVACY.md) · [Jurídico](docs/standards/LEGAL-COMPLIANCE.md) |
 | Continuidade entre agents | [HANDOFF](docs/agents/HANDOFF.md) |

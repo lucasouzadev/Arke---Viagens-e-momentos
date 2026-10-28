@@ -6,7 +6,7 @@
 
 Ler `AGENTS.md`, `docs/ROADMAP.md`, `docs/STATUS.md`, `docs/agents/HANDOFF.md`, ADRs e especificações da tarefa. Verificar branch/PR atual; **não presumir que documentos de PR aberto já estão em main**.
 
-Confirmar: `taskId`, objetivo, tipo (documentação, design, bug, feature, segurança), prioridade, plataforma(s), dependências, decisões abertas, arquivos no escopo, condições de aceite e permissão de publicação. Ler também [PROMPT-OBRIGATORIO](PROMPT-OBRIGATORIO.md), [QUALITY-GATES](QUALITY-GATES.md), [SAFEGUARDS](SAFEGUARDS.md), standards e threat model quando aplicável.
+Confirmar: `taskId`, objetivo, tipo (documentação, design, bug, feature, segurança), prioridade, plataforma(s), dependências, decisões abertas, arquivos no escopo, condições de aceite e permissão de publicação. Ler também [PROMPT-OBRIGATORIO](PROMPT-OBRIGATORIO.md), [CANARY](CANARY.md), [QUALITY-GATES](QUALITY-GATES.md), [SAFEGUARDS](SAFEGUARDS.md), standards e threat model quando aplicável.
 
 ## 2. Planejamento
 

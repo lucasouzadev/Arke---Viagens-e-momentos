@@ -21,6 +21,7 @@
 | [TASK-CONTRACT](agents/TASK-CONTRACT.md) | formato das tarefas |
 | [REVIEW-PROTOCOL](agents/REVIEW-PROTOCOL.md) | gates e revisões |
 | [PROMPT-OBRIGATORIO](agents/PROMPT-OBRIGATORIO.md) | instrução mestre para todos os agents |
+| [CANARY](agents/CANARY.md) | nome confirmado exclusivamente nas respostas do chat; nunca em repositório |
 | [QUALITY-GATES](agents/QUALITY-GATES.md) | gates G-01 a G-14 e classificação de risco |
 | [SAFEGUARDS](agents/SAFEGUARDS.md) | parada, contenção, rollback e recuperação |
 | [THREAT-MODEL](agents/THREAT-MODEL.md) | análise de ameaças por feature |
@@ -68,6 +69,9 @@
 | [SECURITY-PRIVACY](standards/SECURITY-PRIVACY.md) | OWASP MASVS e dados pessoais |
 | [LEGAL-COMPLIANCE](standards/LEGAL-COMPLIANCE.md) | LGPD, LBI, lojas, mídia e proteção de menores |
 | [Domínio](arquitetura/DOMINIO.md) | entidades propostas |
+| [M3-DATA-CONTRACT](arquitetura/M3-DATA-CONTRACT.md) | entidades/vínculos e integridade, proposta |
+| [PERMISSIONS](arquitetura/PERMISSIONS.md) | matriz de autorização por registro, proposta |
+| [SYNC-OFFLINE](arquitetura/SYNC-OFFLINE.md) | erros, retries, conflitos e offline, proposta |
 | [Privacidade](arquitetura/PRIVACIDADE.md) | princípios propostos |
 | [QUALITY-001](qualidade/QUALIDADE.md) | gates obrigatórios futuros |
 | [QUALITY-002](qualidade/MATRIZ-UX-002.md) | cenários de teste, não executados |

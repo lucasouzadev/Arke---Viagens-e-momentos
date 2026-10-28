@@ -22,4 +22,7 @@ Gastos e Cofrinho são ferramentas declarativas, não banco, carteira ou serviç
 
 Nunca publicar credenciais Apple, keystore, chaves irrestritas, dados privados, dumps reais ou screenshots de contas. PRs não confiáveis não devem acessar segredos de CI.
 
+Antes de servir usuários reais,
+**Política de escopo proposta:** acesso a viagem não dá acesso automático a Pins/fotos/entradas pessoais de outros participantes. Veja [PERMISSIONS](PERMISSIONS.md) e [M3-DATA-CONTRACT](M3-DATA-CONTRACT.md).
+
 Antes de servir usuários reais, revisar política de privacidade, segurança e obrigações aplicáveis como LGPD. Não substitui aconselhamento jurídico.
