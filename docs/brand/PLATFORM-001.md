@@ -20,11 +20,18 @@ Uma pessoa em qualquer plataforma precisa conseguir: tocar Pin, mudar Place, abr
 
 ### iOS
 
-Liquid Glass é uma camada funcional para navegação e controles. **O cartão de conteúdo não deve virar um bloco de Liquid Glass**: superfície de leitura precisa ser estável. Se ações sobre o mapa usarem vidro transparente, conferir contraste real e respeitar ajustes de acessibilidade do dispositivo.
+Liquid Glass é uma camada funcional para navegação e controles. **O cartão de conteúdo não deve virar um bloco de Liquid Glass**: superfície de leitura precisa ser estável. Se ações sobre o mapa usarem vidro transparente, conferir contraste real e respeitar ajustes de acessibilidade do dispositivo. **Azul da marca sempre sólido (100% opaco)**; o material de vidro é do sistema, não uma segunda paleta.
 
 ### Android
 
-Flat significa hierarquia por superfícies, tipografia, formas e movimento, **não ausência de feedback**. Compose usa cores semânticas Material 3; se Dynamic Color for adotado, deve preservar estados de Pins e leitura. Não simular translucidez Apple por um overlay arbitrário.
+Flat significa hierarquia por superfícies, tipografia, formas e movimento, **não ausência de feedback**. Compose usa superfícies e tipografia semânticas Material 3, seguindo Light/Dark do sistema. Não gerar uma segunda cor de destaque por wallpaper/Dynamic Color; manter **o mesmo azul da marca** nos estados selecionados. Não simular translucidez Apple por blur arbitrário.
+
+## Política de aparência
+
+- **iOS e Android seguem automaticamente a aparência Light/Dark do dispositivo.** Não haverá seletor próprio de tema.
+- Fundos, cartões, textos, separadores e ícones inativos usam tokens semânticos nativos, não uma paleta manual por plataforma.
+- A única cor customizada de UI do Arke é `arkeBlue`. Cores de erro/aviso do sistema são exceções funcionais, não cores de marca.
+- Mapas e fotos mantêm seus próprios tons; o tema aplica apenas chrome/controles e superfícies do app.
 
 ## Critérios de comparação
 

@@ -1,65 +1,65 @@
-# THEME-001 — Tokens semânticos Light / Dark
+# THEME-001 — Azul único + aparência nativa do dispositivo
 
-**Status:** hipótese de paleta para revisão visual. Não é um design system final nem representa contraste testado sobre mapas reais, fotos ou vidro dinâmico.
+**Regra de direção: APROVADA — uma única cor de marca, azul opaco, com claro/escuro seguindo o sistema.**  
+**Código exato: CANDIDATO A VALIDAR — `#4C728A`.** Sem app, design system implementado ou testes em dispositivo.
 
-## Princípio
+## 1. Cor da marca
 
-Um único **vocabulário semântico** com dois modos. Componentes devem solicitar papéis como `onSurface`, `accent` ou `pinActive`, e não espalhar valores HEX pela UI. Diferentes plataformas podem mapear os papéis a materiais próprios.
+| Token | Valor candidato | Natureza |
+| --- | --- | --- |
+| `arkeBlue` | `#4C728A` | azul dessaturado, sólido, 100% opaco, sem gradiente |
 
-## Proposta de tokens
+Este é **o único token cromático proprietário** do Arke. Não criar escala de azuis, azul-céu adicional, ciano, salmão, laranja ou segunda cor de destaque.
 
-| Token | Light | Dark | Uso |
+> "Opaco" aqui significa cor sólida, sem alpha como parte do token. Não significa obrigatoriamente escurecer toda a interface. O Liquid Glass do iOS segue o comportamento do sistema e **não modifica o valor da cor da marca**.
+
+A escolha do código hex é uma proposta de implementação visual, **não uma decisão final de tonalidade**. A decisão aprovada é a restrição a **um azul** e a adoção do tema automático do dispositivo.
+
+## 2. O restante é do sistema
+
+| Papel | iOS | Android | Regra |
 | --- | --- | --- | --- |
-| `canvas` | `#FCFEFE` | `#0C161C` | fundo geral |
-| `surfaceContent` | `#FFFFFF` | `#15242C` | segundo cartão |
-| `surfaceRaised` | `#F2F6F7` | `#20313A` | itens elevados |
-| `mapAtmosphere` | `#BCECF7` | `#173A49` | atmosfera/placeholder de mapa, **não mapa real** |
-| `textPrimary` | `#183F4E` | `#F2FAFC` | informação fundamental |
-| `textSecondary` | `#4A6570` | `#B8CDD4` | metadados legíveis |
-| `actionFill` | `#0E5367` | `#83D8E9` | ação principal |
-| `onActionFill` | `#FFFFFF` | `#08252D` | conteúdo da ação |
-| `stampWarm` | `#D45B44` | `#FF9B7C` | destaque editorial/ilustrativo, não texto pequeno sobre branco |
-| `pinActive` | `#183F4E` | `#83D8E9` | forma do Pin com contorno |
-| `outline` | derivado por opacidade/tema | derivado por tema | separador não textual; contraste a confirmar |
+| Fundo da tela | background semântico do sistema | background/surface do tema nativo | sem cor de marca no fundo inteiro |
+| Cartões | superfícies semânticas | Surface do Material 3 | claros ou escuros conforme dispositivo |
+| Texto primário/secundário | label/secondary label | onSurface/onSurfaceVariant | sem HEX proprietário |
+| Separadores | cores do sistema | outline/outlineVariant neutro | sem tintas azuis extras |
+| Ícones inativos | cor secundária do sistema | cor de conteúdo secundário | sem outra cor de destaque |
+| Ação principal / Pin ativo | `arkeBlue` | `arkeBlue` | única cor intencional do Arke |
+| Erro/destrutivo | cor de erro nativa com rótulo | error do sistema com rótulo | exceção semântica de segurança, não marca |
 
-**Não usar `stampWarm` light para texto comum em branco:** contraste calculado ≈3,90:1, abaixo de 4,5:1 requerido para texto normal. Alterar cor ou aplicação.
+- Seguir **automaticamente o tema Light ou Dark definido no dispositivo**, incluindo atualizações enquanto o app está em primeiro plano.
+- Não criar um botão "Tema do Arke" nem paletas paralelas. Preferências de acessibilidade também vêm do sistema.
+- Não usar cores de papel de parede como segundo *accent* de marca por padrão. No Android, manter as superfícies adaptáveis e **a ação de marca no mesmo azul**, sem a cor dinâmica substituir sua identidade.
+- Fotografias e mapa real têm suas **cores próprias do conteúdo**, não fazem parte da paleta de UI. Não aplicar filtro azul artificial sobre mapa/roteiro para simular dominância.
 
-## Pares calculados de contraste em cores sólidas (WCAG)
+## 3. Distribuição no layout de dois cartões
 
-Os seguintes resultados derivam de luminância relativa sRGB e são **checagens matemáticas**, não teste visual/device:
+- Superior: mapa real em destaque; azul opaco nos Pins e ações selecionadas e, se não houver mapa, em área ilustrativa original simples.
+- Inferior: superfície **neutra do sistema**. Azul apenas em seleção de contexto/ação primária/traços editoriais discretos; restante tipografia/ícones em cores semânticas.
+- Relógio: ativo em azul e opções inativas neutras; ícone + texto garantem que a seleção não dependa da cor.
+- Carrossel: nome ativo pelo peso/tamanho e, se necessário, um indicador azul; vizinhos neutros.
+- Stamps: borda neutra, destaque opcional azul, fotos com suas cores naturais. **Sem cores decorativas concorrentes.**
 
-| Par | Razão aproximada | Uso recomendado |
-| --- | ---: | --- |
-| `textPrimary` / `mapAtmosphere` light | 8,86:1 | textos em atmosfera plana |
-| `textPrimary` / branco | 11,29:1 | títulos e corpo |
-| `textSecondary` / branco | 6,20:1 | metadados |
-| `onActionFill` / `actionFill` light | 8,57:1 | botões |
-| `textPrimary` / `surfaceContent` dark | 15,04:1 | títulos escuros |
-| `textSecondary` / `surfaceContent` dark | 9,63:1 | texto secundário escuro |
-| `onActionFill` / `actionFill` dark | 9,87:1 | botões dark |
-| `stampWarm` / `surfaceContent` dark | 7,75:1 | destaque editorial escuro |
+## 4. Contraste — verificação matemática do candidato
 
-Critério inicial: **4,5:1 para texto comum**, **3:1 para texto grande**; ícones/elementos UI essenciais exigem avaliação separada de contraste não textual. Nenhum valor garante legibilidade sob vidro translúcido/foto.
+A luminância sRGB de `#4C728A` contra **branco sólido** gera contraste de aproximadamente **5,15:1** (válido para texto comum em par opaco). A avaliação precisa ser repetida ao escolher a tonalidade final.
 
-## Mapas, glass e fotografia
+**Atenção:** a mesma cor sobre superfícies Dark pode não atingir 4,5:1 para texto pequeno. Portanto:
+- Para texto no Dark, usar `onSurface` do sistema; azul pode ser usado em **formas de seleção / preenchimentos**, não em labels de baixo contraste.
+- Em botão com preenchimento azul, usar conteúdo branco somente depois de validar contraste e estados especiais.
+- Glass, mapa, imagem, estados pressionados/disabled e barras do sistema exigem validação específica; cálculo em superfície sólida não basta.
+- WCAG como referência: 4,5:1 para texto comum e 3:1 para texto grande, com análise separada de componentes e ícones.
 
-- Mapas reais possuem cores variáveis: rótulos/botões recebem superfície contrastante e/ou scrim avaliado **no pior trecho da imagem**.
-- Liquid Glass iOS: usar materiais **do sistema** em controles, respeitar Reduce Transparency/Increase Contrast; não fixar transparência sobre o mapa e presumir contraste.
-- Android: superfícies flat/Material 3 com cores semânticas. Dynamic Color, se oferecido, será opção avaliada sem perder distinção dos Pins.
-- Fotos e stamps preservam cores autorais; overlays/legendas têm superfícies próprias.
+## 5. Liquid iOS ≠ gradiente de marca
 
-## Luz, escuro e condições extremas
+No iOS, o vidro é um **material nativo de interface**, aplicável a controles. A marca continua com **uma cor azul sólida**; não pintar painéis inteiros de vidro azul. No Android, usar superfícies flat e feedback nativo, sem blur fabricado.
 
-- Light e Dark devem ter **igual capacidade funcional**. Dark não é mera inversão de Light.
-- Testar sol direto, brilho baixo, daltonismo simulado, alto contraste e contraste de ícones.
-- Estado de erro/sucesso requer símbolo e texto; nunca somente vermelho/verde.
-- Não usar cor azulada no fundo escuro sem avaliação crítica; a tonalidade aqui é apenas teste.
-- Preferências do sistema têm prioridade sobre decoração.
+## 6. Itens ainda abertos
 
-## Fontes e referências
+Hex exato; validação de contraste sobre mapas/fotos e estados Disabled; legibilidade com transparência reduzida; formas de ícones, tipografia, marca gráfica, testes Light/Dark e alto contraste.
 
-- Apple Materials: https://developer.apple.com/design/human-interface-guidelines/materials
-- Material 3 Compose: https://developer.android.com/develop/ui/compose/designsystems/material3
-- WCAG contraste: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum
+**A decisão de cor única e tema automático não está em discussão nesta rodada.**
 
-Relacionado: [BRAND-001](BRAND-001.md), [PLATFORM-001](PLATFORM-001.md), [BRAND-QUALITY-001](BRAND-QUALITY-001.md).
+Relacionados: [ADR-006](../decisoes/ADR-006.md), [BRAND-001](BRAND-001.md), [PLATFORM-001](PLATFORM-001.md), [BRAND-QUALITY-001](BRAND-QUALITY-001.md).
+
+Referências: [Apple Colors](https://developer.apple.com/design/human-interface-guidelines/color), [Android Compose Material 3](https://developer.android.com/develop/ui/compose/designsystems/material3), [W3C Contrast Minimum](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum).

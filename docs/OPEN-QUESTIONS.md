@@ -5,8 +5,8 @@
 - A marca gráfica será rota, selo ou tipografia? Ver [BRAND-001](brand/BRAND-001.md).
 - A expressão “Onde vamos?” será nome de produto, slogan ou só pergunta editorial?
 - Pesquisar disponibilidade de nome/marca e direitos de uso antes de publicação comercial.
-- Aprovar paleta light/dark, contraste sobre mapa real e alternativa de alto contraste.
-- Avaliar se cores de atmosfera azuladas no dark mode devem ser reduzidas ou substituídas.
+- **Decisão encerrada:** uma cor azul opaca de marca; demais superfícies e textos seguem tema do dispositivo (ADR-006).
+- **Pendente:** aprovar o HEX exato do azul proposto e o contraste sobre mapa real, controles do sistema e alto contraste.
 - Selecionar tipografia e política de licença, desenho de ícones, favicon, avatar e ícone de app.
 - Definir stamp original: variante padrão, exportação, direitos de fotografias, tratamento de EXIF e compartilhamento.
 - Definir se estampas de memórias integram Place, Trip ou ambos na UI.

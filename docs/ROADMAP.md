@@ -14,7 +14,7 @@
 | FINANCE-001 | gastos, cofrinho e moedas | proposto |
 | QUALITY-002 | cenários de validação | proposto |
 | BRAND-001 | linguagem da marca, nome, símbolo e iconografia | **proposto em revisão** |
-| THEME-001 | paleta claro/escuro e pares de contraste | **proposto em revisão** |
+| THEME-001 | **azul único e tema nativo** (regra aprovada); hex candidato e contraste pendentes | **regra aprovada; tom em revisão** |
 | STAMPS-001 | memórias em selos, variantes, dados e privacidade | **proposto em revisão** |
 | PLATFORM-001 | handoff nativo de estilo | **proposto em revisão** |
 | BRAND-QUALITY-001 | requisitos de validação visual | **proposto em revisão** |
@@ -26,7 +26,7 @@
 ## Ordem de revisão proposta
 
 1. Revisar comportamento do relógio, carrossel e detents em DESIGN-004.
-2. Revisar proposta de marca em [BRAND-001](brand/BRAND-001.md) e contraste em [THEME-001](brand/THEME-001.md).
+2. Revisar proposta de marca em [BRAND-001](brand/BRAND-001.md) e apenas o **tom exato do azul único** / contraste em [THEME-001](brand/THEME-001.md); temas são automáticos.
 3. Selecionar vocabulário visual dos [STAMPS-001](brand/STAMPS-001.md): formato base, registro e compartilhamento.
 4. Criar mockups **originais** de iOS Liquid e Android Flat para quatro estados; validar modo claro/escuro e acessibilidade.
 5. Revisar UX-001 e QUALITY-002; resolver grupo/finanças.

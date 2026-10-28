@@ -16,11 +16,13 @@
 - [ ] `textPrimary`, `textSecondary`, botões e indicadores avaliados em superfície sólida e **mapa/foto real**.
 - [ ] Texto comum alcança no mínimo 4,5:1 nos pares apresentados; texto grande 3:1.
 - [ ] Ícones essenciais, componentes e indicadores testados para contraste não textual.
-- [ ] `stampWarm` Light nunca aplicado como texto comum sobre branco sem mudança de cor.
+- [ ] Apenas um token cromático de marca (`arkeBlue`), opaco e sem gradientes; nenhuma cor de destaque concorrente.
+- [ ] Aparência clara/escura acompanha a configuração do dispositivo sem toggle próprio.
+- [ ] Azul usado como label somente onde passar contraste no tema em uso; Dark usa texto semântico do sistema.
 - [ ] Liquid, acessibilidade de transparência e contraste testados em dispositivo.
 - [ ] Tema flat Android consistente com Material 3 e fontes escaladas.
 - [ ] Pin ativo reconhecível sem cor; estados de erro/sucesso não dependem de matiz.
-- [ ] Tema dark projetado semanticamente, não invertido automaticamente.
+- [ ] Tema dark usa cores semânticas fornecidas pelo sistema, não paleta proprietária nem inversão de HEX.
 
 ## Gate Stamp
 

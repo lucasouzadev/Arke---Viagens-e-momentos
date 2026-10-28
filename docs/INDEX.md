@@ -32,7 +32,7 @@ Versão principal: **ARKE-DOCS-001**; complemento de UX **ARKE-DOCS-002**; compl
 | --- | --- |
 | [Índice de identidade](brand/README.md) | orientação |
 | [BRAND-001 — linguagem da marca](brand/BRAND-001.md) | **nova proposta** |
-| [THEME-001 — claro/escuro e contraste](brand/THEME-001.md) | **nova proposta** |
+| [THEME-001 — azul único e tema do dispositivo](brand/THEME-001.md) | **regra aprovada; hex candidato** |
 | [STAMPS-001 — memórias colecionáveis](brand/STAMPS-001.md) | **nova proposta** |
 | [PLATFORM-001 — handoff nativo](brand/PLATFORM-001.md) | **nova proposta** |
 | [BRAND-QUALITY-001 — critérios de revisão](brand/BRAND-QUALITY-001.md) | **nova proposta** |
@@ -49,7 +49,7 @@ Versão principal: **ARKE-DOCS-001**; complemento de UX **ARKE-DOCS-002**; compl
 | [BUILD-001 — distribuição](engenharia/DISTRIBUICAO.md) | proposta; sem workflows |
 | [Roadmap](ROADMAP.md) | atualizado |
 | [Questões abertas](OPEN-QUESTIONS.md) | decisões ainda pendentes |
-| [ADRs](decisoes/README.md) | decisões já aceitas |
+| [ADRs, incluindo ADR-006 da cor única](decisoes/README.md) | decisões já aceitas |
 
 ## Fonte da verdade
 

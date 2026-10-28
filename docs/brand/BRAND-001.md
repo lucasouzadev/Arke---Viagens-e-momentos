@@ -1,6 +1,6 @@
 # BRAND-001 — Identidade, expressão e linguagem do Arke
 
-**Status:** proposta, não aprovada. **Escopo:** sistema de identidade e conteúdo; nenhum código ou logo definitivo.
+**Status:** linguagem gráfica em proposta; **aprovados** o azul único opaco e o tema automático do dispositivo. Nenhum código ou logo definitivo.
 
 ## 1. Ideia central
 
@@ -21,14 +21,14 @@
 
 ## 2. Arquitetura visual
 
-**Identidade = composição + relação espacial + stamps originais**; não depende de uma cor única.
+**Identidade = composição + relação espacial + um único azul opaco + stamps originais.** Fundo, cartões e textos seguem as cores semânticas do dispositivo; não haverá paleta proprietária de destaques múltiplos.
 
 1. Cartão superior: atmosfera, mapa, viagem e seleção de Pins.
 2. Cartão inferior: papel de leitura e ação; relógio/contexto, carrossel de lugares, conteúdo vertical.
 3. Destaques: Pins, stamp, mídia e rota conectados sem elementos duplicados.
 4. Corredor visual central: nome do destino deve dialogar com o Pin focado.
 
-Evitar ornamentação que prejudique utilidade do mapa (rotas fictícias não podem parecer direções reais).
+Evitar ornamentação que prejudique utilidade do mapa (rotas fictícias não podem parecer direções reais). A referência azul-céu anterior não define um segundo tom de marca nem exige pintar o mapa de azul.
 
 ## 3. Marca gráfica — direções ainda alternativas
 
@@ -68,6 +68,6 @@ Não eleger uma opção sem estudo de reconhecimento em 16–48 px, modo escuro,
 
 ## 7. Governança
 
-Antes de aprovar: marca, naming, logotipo, favicon, avatar, tipografia, ícones, tokens light/dark, acessibilidade e direitos de assets. Registrar escolha em ADR futuro; nenhuma decisão desta página se converte em implementação automática.
+Antes de finalizar: marca, naming, logotipo, favicon, avatar, tipografia, ícones, **hex exato do único azul**, acessibilidade e direitos de assets. A aparência Light/Dark será herdada automaticamente do device, sem temas customizados. Registrar escolha em ADR futuro; nenhuma decisão desta página se converte em implementação automática.
 
 Relacionado: [THEME-001](THEME-001.md), [STAMPS-001](STAMPS-001.md), [PLATFORM-001](PLATFORM-001.md).

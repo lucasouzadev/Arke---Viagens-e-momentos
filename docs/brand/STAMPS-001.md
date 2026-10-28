@@ -11,8 +11,9 @@ O Arke não é apenas sobre onde alguém **vai**: também sobre onde **esteve** 
 ## 2. Estrutura visual proposta
 
 - Formato base: selo postal de cantos recortados ou borda perfurada, com leitura boa mesmo sem borda.
-- Camadas: **moldura**, **imagem/ilustração autorizada**, **local** (nome), **data ou período opcional**, **marca pessoal discreta**, **nota opcional**.
+- Camadas: **moldura neutra do sistema**, **imagem/ilustração autorizada**, **local** (nome), **data ou período opcional**, **marca pessoal discreta em azul opaco**, **nota opcional**.
 - O formato deve funcionar com foto horizontal/vertical, ausência de foto, nome longo e acessibilidade.
+- **Uma única cor de marca** para detalhe editorial; borda, papel, texto e separadores seguem o modo claro/escuro nativo. Sem selo salmão, dourado, verde ou outras cores decorativas; fotografia mantém cores próprias.
 - Diferença entre fotos reais de usuário e arte gerada/ilustrada deve ficar evidente quando relevante.
 - Evitar carimbos de passaporte reais, símbolos oficiais, selos de aprovação e numerações de "visita verificada".
 

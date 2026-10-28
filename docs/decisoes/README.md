@@ -7,5 +7,6 @@ Status **Aceita** significa decisão de produto/arquitetura, **não código impl
 - [ADR-003 — Pin pode anteceder uma viagem](ADR-003.md)
 - [ADR-004 — Cofrinho informativo](ADR-004.md)
 - [ADR-005 — Documentação antes do código](ADR-005.md)
+- [ADR-006 — Uma única cor e tema automático](ADR-006.md)
 
 Uma alteração que contradiga uma decisão aceita precisa registrar motivo, alternativas e consequências em novo ADR.

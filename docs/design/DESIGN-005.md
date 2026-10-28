@@ -22,14 +22,15 @@ Arke deve ser reconhecível **pela composição de dois cartões, relação mapa
 | accent | ações primárias | ver THEME-001, ainda proposto |
 | status | erro/sucesso/atenção | nunca depender somente de cor |
 
-### Cores experimentais, NÃO finais
+### Cor única aprovada
 
-- Sky: `#BCECF7` — atmosfera da referência.
-- Deep: `#254C5D` — contraste no mapa claro.
-- Paper: `#FFFFFF` — cartão de conteúdo.
-- Mist: `#F2F5F6` — camada auxiliar.
+- **Uma única cor de marca: azul opaco**, com `#4C728A` como candidato de tom exato.
+- **Nenhuma outra cor de acento** em Pins, stamps ou navegação; azul aplicado a seleções/ações relevantes.
+- Cartões, fundo, textos e separadores recebem **cores semânticas do sistema** de acordo com Light/Dark do dispositivo.
+- Fotos e mapa real mantêm cor natural do conteúdo; nunca os colorir artificialmente de azul.
+- A proposta anterior com Sky/Deep/Paper/Mist e paleta adicional foi **descartada**.
 
-**Não usar Sky como mapa geográfico simplificado definitivo; o mapa precisa revelar ruas, lugares e informações úteis.** O aprofundamento de tokens foi movido para [THEME-001](../brand/THEME-001.md). Estes valores são referências anteriores, não tokens contraditórios aprovados.
+Detalhes e contrastes estão em [THEME-001](../brand/THEME-001.md).
 
 ## Tipografia e alinhamento
 
@@ -54,12 +55,12 @@ Arke deve ser reconhecível **pela composição de dois cartões, relação mapa
 
 ## Temas e responsividade
 
-- Claro: referência Sky/Paper como exploração.
-- Escuro: **a definir por tokens semânticos**, não por simples inversão de cores.
+- Claro ou escuro: **seguir automaticamente a aparência definida no dispositivo** com superfícies e texto nativos.
+- Sem sistema proprietário de temas, presets cromáticos ou gradientes de marca.
 - Alto contraste: exigir separação perceptível entre Pin ativo, outros Pins, mapa e conteúdo.
 - Landscape/teclado/fonte ampliada: permitir trocar distribuição das proporções e, se necessário, apresentar relação mapa–conteúdo em variação adaptativa **sem criar cinco telas novas**.
 - Testar alvos de toque, truncamento, notch/insets e leitor de tela antes da aprovação de mockups.
 
 ## Itens a aprovar
 
-Paleta final, família tipográfica/licença, radius, densidade, stamp original, motion token, dark mode, ícones e direitos de marca. Esses itens não estão decididos nesta entrega.
+**Tom exato do azul único**, família tipográfica/licença, radius, densidade, stamp original, motion token, ícones e direitos de marca. Regra de cor única e tema automático já aprovados. Esses itens não estão decididos nesta entrega.

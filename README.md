@@ -14,6 +14,7 @@ O Arke é um projeto aberto de planejamento de viagens solo e em grupo. Pins, ro
 - **Três posições do painel:** Explorar, Equilibrado e Detalhes.
 - **Pins independentes de viagens**; mesma viagem pode ser solo ou compartilhada.
 - **iOS nativo em SwiftUI, Android nativo em Compose**, sem framework cross-platform para UI.
+- **Uma única cor de marca:** azul opaco; demais fundos, superfícies, textos e aparência Light/Dark seguem o dispositivo. Hex candidato documentado em [THEME-001](docs/brand/THEME-001.md).
 - **Documentação antes do código**, até nova autorização.
 
 ## Documentos para revisão
@@ -25,7 +26,7 @@ O Arke é um projeto aberto de planejamento de viagens solo e em grupo. Pins, ro
 | Relógio/carrossel | [DESIGN-002](docs/design/DESIGN-002.md) e [DESIGN-004](docs/design/DESIGN-004.md) |
 | Linguagem visual | [DESIGN-003](docs/design/DESIGN-003.md) e [DESIGN-005](docs/design/DESIGN-005.md) |
 | **Marca proposta** | [BRAND-001](docs/brand/BRAND-001.md) |
-| **Paleta Light / Dark** | [THEME-001](docs/brand/THEME-001.md) |
+| **Azul único + tema nativo** | [THEME-001](docs/brand/THEME-001.md) |
 | **Stamps de memória** | [STAMPS-001](docs/brand/STAMPS-001.md) |
 | **Equivalência iOS/Android** | [PLATFORM-001](docs/brand/PLATFORM-001.md) |
 | **Auditoria visual futura** | [BRAND-QUALITY-001](docs/brand/BRAND-QUALITY-001.md) |
