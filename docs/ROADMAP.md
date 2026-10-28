@@ -116,7 +116,19 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 - Mudança perceptível ao público → avaliar **CHANGELOG**; antes do lançamento, falar de progresso do projeto; após release confirmada, informar novidades realmente disponíveis.
 - Não criar um segundo changelog técnico concorrente para o público. Históricos de commits/PRs ficam no GitHub.
 
-## 7. Gates para implementação
+## 7. Encerramento da fundação documental
+
+A fundação de documentos para agents, produto, design, dados, segurança e qualidade **já foi redigida e está em revisão**. O próximo trabalho útil não é criar ROADMAP-V3 nem duplicar standards: é aprovar/corrigir as propostas existentes e registrar decisões humanas abertas. [Diagnóstico de cobertura](STATUS.md#auditoria-de-cobertura-documental--27102026).
+
+- [x] Fonte única de roadmap, protocolos obrigatórios, STATUS/HANDOFF e changelog preparados em branch.
+- [x] Contratos iniciais de UX/UI, domínio, permissões, offline, segurança e jurídico preparados como propostas.
+- [ ] Revisar PR #1 e confirmar integração à `main` quando autorizado.
+- [ ] Resolver design, identidade, grupos, sync, mapa e licenças, **sem transformar hipótese em decisão**.
+- [ ] Aprovar a arquitetura e testes específicos antes de autorizar o primeiro código de aplicativo.
+
+Novos documentos devem nascer **de uma lacuna demonstrada**, não de contagem de arquivos. Não declarar M1–M4 concluídos apenas pela cobertura inicial.
+
+## 8. Gates para implementação
 
 - [ ] M0 aprovado e integrado.
 - [ ] Contratos mínimos M1/M2/M3 aprovados com pendências explícitas.

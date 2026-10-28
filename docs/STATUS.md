@@ -28,6 +28,29 @@
 | M4 — qualidade/distribuição | **planejado** | quality-gates especificados; sem workflows executáveis |
 | M5 — implementação | **bloqueado** | requer autorização explícita, contratos e ferramentas escolhidos |
 
+## Auditoria de cobertura documental — 27/10/2026
+
+**Conclusão:** a fundação documental necessária para organizar agents **está preparada na branch e disponível para revisão**. Não há necessidade de inventar novos documentos gerais antes de resolver as decisões listadas abaixo. **Isto não é certificação de segurança, conformidade ou prontidão de aplicativo.**
+
+| Frente | Cobertura atual | O que falta |
+| --- | --- | --- |
+| M0 — agentes e qualidade | AGENTS, prompt obrigatório, ROADMAP único, WORKFLOW, HANDOFF, STATUS, G-01..G-15, salvaguardas | **revisar e integrar PR #1** |
+| Produto e UX | Visão, cinco contextos, dois cartões, DESIGN-001 a 005, contrato M1 | validar detalhes propostos em dispositivos e aprovar estados/gestos |
+| Identidade | BRAND/THEME/STAMPS, um azul opaco e tema do dispositivo | escolher tom exato, ícones/assets e direitos |
+| Natividade | estratégia SwiftUI/MapKit + Compose/Android, fronteiras candidatas | decidir fornecedor de mapas Android e módulos definitivos |
+| Dados e grupo | M3-DATA-CONTRACT, PERMISSIONS, SYNC-OFFLINE e GROUP/FINANCE | decidir autenticação, papéis, retenção, convites e conflitos |
+| Segurança/jurídico | baseline OWASP, LGPD/LBI, análise de ameaças e licenças | revisão concreta por contexto antes de processar dados/lançar |
+| Qualidade e release | matriz QA, E2E futuro, estratégia CI/TestFlight/APK e novidades | implementação/testes reais **somente após autorização** |
+
+### Decisões que desbloqueiam a próxima etapa
+
+1. **Aprovação e merge do PR documental**, após revisão das propostas, sem tratar tudo como aceito por associação.
+2. **Design:** tom do azul, detalhes do relógio/carrossel e assets.
+3. **Domínio:** contas, convite, papéis, o que é pessoal versus compartilhado, exclusão/retenção e sincronização.
+4. **Infra e negócio:** provedor de mapas Android, política de offline, moedas/finanças e licença final de código/marca.
+
+Não confundir **“documentos existentes”** com **“decisões aprovadas”**. O Arke pode parar de produzir novos documentos gerais enquanto revisamos os existentes.
+
 ## Próxima decisão necessária
 
 Revisar o **pacote documental M0** e o conteúdo aberto no [PR #1](https://github.com/lucasouzadev/Arke---Viagens-e-momentos/pull/1). **Não** declarar aprovado todo conteúdo do PR pelo simples fato de M0 ter sido solicitado.

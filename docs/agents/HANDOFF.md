@@ -32,6 +32,12 @@ Registros históricos importantes devem ficar em comentários de PR ou arquivos 
 - Canário obrigatório foi solicitado para **toda resposta em chat**; o tratamento foi confirmado no chat e deve poder ser recuperado de preferências pessoais privadas da ferramenta. Nunca gravar o valor em código/artefatos; não presumir que contas distintas compartilhem configurações. Ver [CANARY](CANARY.md).
 - M3 recebeu propostas de [modelo de dados](../arquitetura/M3-DATA-CONTRACT.md), [permissões](../arquitetura/PERMISSIONS.md) e [sync/offline](../arquitetura/SYNC-OFFLINE.md). Nenhum schema/backend implementado.
 
+### Revisão de completude documental
+
+A cobertura principal de governança, UX/UI, dados, segurança, jurídico e qualidade já está presente no PR, conforme [STATUS](../STATUS.md#auditoria-de-cobertura-documental--27102026). Não há autorização de merge nem de implementação; o melhor próximo passo é **revisar decisões**, não gerar variantes dos mesmos documentos.
+
+O canário pode usar preferências pessoais persistentes e privadas do agente; o valor não fica no repositório. Não assumir que um serviço compartilha essa configuração com outro.
+
 ### Próximo passo após este PR
 
 1. Revisar `AGENTS.md`, `docs/agents/PROMPT-OBRIGATORIO.md`, `QUALITY-GATES.md`, `SAFEGUARDS.md`, os quatro arquivos em `docs/standards/`, `docs/ROADMAP.md`, `docs/STATUS.md` e o restante dos protocolos no mesmo PR.
