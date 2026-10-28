@@ -29,7 +29,7 @@ Registros históricos importantes devem ficar em comentários de PR ou arquivos 
 - Cor de marca: **um azul sólido**; tonalidade exata candidata, não aprovada. Tema automático por dispositivo.
 - M0 deve substituir o ROADMAP existente por uma estrutura **única** em `docs/ROADMAP.md`; **não** criar `ROADMAP-V2.md`.
 - M0 foi ampliado com **PROMPT-OBRIGATORIO / QUALITY-GATES / SAFEGUARDS / THREAT-MODEL** e quatro standards: arquitetura, acessibilidade, segurança e jurídico. São direções documentais, sem testes nativos ou certificação.
-- Canário obrigatório foi solicitado para **toda resposta em chat**; o **nome de tratamento exato não foi confirmado**. Nunca gravar o valor em código/artefatos; somente em sessão de chat. Ver [CANARY](CANARY.md).
+- Canário obrigatório foi solicitado para **toda resposta em chat**; o tratamento foi confirmado no chat e deve poder ser recuperado de preferências pessoais privadas da ferramenta. Nunca gravar o valor em código/artefatos; não presumir que contas distintas compartilhem configurações. Ver [CANARY](CANARY.md).
 - M3 recebeu propostas de [modelo de dados](../arquitetura/M3-DATA-CONTRACT.md), [permissões](../arquitetura/PERMISSIONS.md) e [sync/offline](../arquitetura/SYNC-OFFLINE.md). Nenhum schema/backend implementado.
 
 ### Próximo passo após este PR

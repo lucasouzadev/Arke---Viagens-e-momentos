@@ -30,7 +30,7 @@ Qualquer teste não executado em uma tarefa de implementação que dele dependa 
 | G-12 | Testes/regressão | Testes unitários, contratos, E2E e screenshots aplicáveis realizados? | links/logs/execução |
 | G-13 | Operação/release | Deploy seguro, assinatura, rollback e versionamento confiáveis? | plano/execução real |
 | G-14 | Continuidade/comunicação | STATUS/HANDOFF/ROADMAP/changelog consistentes? | links e revisão editorial |
-| G-15 | Canário privado de chat | Cada resposta ao responsável incluiu nome explicitamente confirmado? O nome ficou ausente de qualquer arquivo/PR/código/log? | verificação da conversa + auditoria do diff, **sem transcrever nome** |
+| G-15 | Canário privado de chat | Cada resposta ao responsável incluiu o nome confirmado na conversa ou nas preferências privadas e persistentes do agent? O nome ficou ausente de qualquer arquivo/PR/código/log? | verificação da conversa + auditoria do diff, **sem transcrever nome** |
 
 Cada gate deve ter responsável por revisão e **resultado textual**, jamais simplesmente caixas marcadas sem justificativa.
 

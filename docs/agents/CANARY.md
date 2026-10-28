@@ -1,44 +1,36 @@
-# CANARY — Marca de conformidade **somente nas respostas do chat**
+# CANARY — Nome somente nas respostas privadas do chat
 
-**Status:** regra de governança aprovada conceitualmente; nome de tratamento **ainda não informado/confirmado** nesta conversa. **Não é um segredo, nem prova de ausência de alucinações.** Nenhum nome real está registrado neste arquivo.
+**Status:** diretriz aprovada. Este arquivo contém somente a regra genérica, **nunca o valor do nome**. O canário é um sinal fraco de que a instrução foi seguida, não prova de ausência de alucinações.
 
-## Objetivo
+## Fonte da preferência e ordem de prioridade
 
-O responsável pelo projeto quer que **cada resposta visível de cada agent no chat** contenha **a forma exata de tratamento que ele escolher**, para perceber imediatamente quando uma instrução de trabalho não está sendo seguida. A regra vale para respostas de progresso, esclarecimento, revisão, planejamento, erros e entrega final; não apenas para conclusão de PR.
+1. O **nome explicitamente atualizado pelo responsável na conversa atual** prevalece.
+2. Na ausência de atualização, usar a forma de tratamento **confirmada nas instruções pessoais e persistentes da ferramenta**, quando fornecidas ao agent.
+3. Se não houver informação disponível, **não deduzir** pelo usuário GitHub, arquivos, perfis, e-mails, metadados ou nomes de terceiros. O agent sinaliza `CANARY NÃO CONFIGURADO` e solicita **uma configuração privada por ferramenta**, em vez de perguntar em toda conversa.
+4. **ChatGPT, Codex, Claude e outros agents não compartilham automaticamente preferências globais.** O responsável pode configurar cada serviço no espaço pessoal e privado correspondente; isso não é parte do projeto nem do Git.
+5. Nenhuma mensagem deve afirmar que o perfil pessoal de uma ferramenta foi alterado sem resposta confirmando essa alteração.
 
-## Como configurar, sem vazamento para código ou repositório
+## Regra absoluta de saída
 
-1. O responsável fornece explicitamente no **chat da sessão de trabalho** o nome/apelido de tratamento a utilizar.
-2. O agent usa **somente aquele valor confirmado**, nunca infere nome de username GitHub, título de arquivo, e-mail, conta, histórico impreciso ou outra fonte.
-3. Em cada mensagem dirigida ao responsável **dentro do chat**, incluir o nome exatamente conforme fornecido, preferencialmente na primeira frase ou no encerramento, de forma natural e legível.
-4. O valor **não deve ser gravado** em código fonte, comentários, strings, testes, fixtures, configurações, scripts, commits, descrições de PR, logs, relatórios, documentação, artefatos exportados nem CHANGELOG. Nem mesmo em código-fonte de geradores de prompts.
-5. Instruções documentais podem conter apenas a variável genérica **[NOME_CONFIRMADO_NO_CHAT]**, nunca seu valor literal. O valor vive no contexto privado da sessão/chat (ou em instrução operacional fornecida pelo responsável fora do repositório) e não deve ser copiado para outras superfícies.
-6. Não colocar nome de canário em mensagem para o usuário final do aplicativo, modal de novidades, páginas públicas nem metadados.
-7. Se o nome **não estiver presente/confirmado no contexto da sessão**, o agent **não deve adivinhar ou afirmar cumprimento do canário**. Deve solicitar a forma de tratamento em uma resposta de chat e marcar **CANARY: NÃO CONFIGURADO** no relatório privado da sessão. Pode executar documentação de baixo risco já autorizada, mas **não declarar a verificação do canário aprovada**.
-8. Se o agente descobrir o nome em código/docs/log, tratar como fuga de escopo: remover da alteração pendente, comunicar ao responsável e rever artefatos já publicados de maneira autorizada.
+**Cada resposta visível no chat com o responsável** (inclusive progresso, esclarecimento, falha e entrega final) deve conter a forma exata de tratamento recebida pelo agent. Preferencialmente no começo ou fim da mensagem.
 
-## Formato recomendado para respostas no chat
+O valor **nunca** deve ir para código fonte, testes, fixtures, scripts, comentários, strings de UI, arquivos de configuração do projeto, documentos, ADRs, README, CHANGELOG, commits, PRs, issues, logs, screenshots ou artefatos exportados.
 
-> **[NOME_CONFIRMADO_NO_CHAT]**, concluí o item M3-DOMAIN-01. Consultei o documento X e o ADR Y. Foram alterados A e B. Validei os links; não executei testes nativos porque ainda não há aplicativo. Resta decidir Z.
+**Única exceção de armazenamento permitida:** preferências **pessoais privadas da própria ferramenta**, fora do repositório, salvas pelo responsável por seu mecanismo de configuração. Não propagar o nome por ambiente, Git ou arquivos públicos.
 
-O exemplo usa um **placeholder** de instrução, não nome, e **nunca deve aparecer literalmente nas respostas finais** como se o canário estivesse configurado.
+## Exemplo genérico
 
-## Protocolo de verificação — não confundir com fidelidade
+> **[NOME_CONFIRMADO_PRIVADAMENTE]**, atualizei o contrato M3 e conferi os links da branch. Não executei E2E porque o app ainda não foi implementado. Permanece pendente a decisão de permissões de grupo.
 
-- **Verificação A — Presença:** há o nome confirmado em **toda mensagem do chat**? Pontos ausentes indicam provável falha de instrução.
-- **Verificação B — Rastreabilidade:** o agent cita documentos/ADRs e versão real da branch/PR consultada? Conferir links.
-- **Verificação C — Evidências:** o relatório traz testes realmente executados, limitações e itens bloqueados? Conferir arquivos/resultados.
-- **Verificação D — Vazamento:** o nome do canário **não aparece em diff, PR, comentários, log ou artefatos**? Revisar antes de publicação.
+O placeholder não é o nome; **não** escrevê-lo literalmente em uma resposta real para fingir que o canário foi configurado.
 
-Um agent que conhece o nome pode simplesmente repeti-lo sem ter seguido o resto. Portanto, **A não prova B/C/D, nem garante que não alucinou**. O controle real combina revisões, gates, PRs, testes e auditoria de fontes. Não usar o nome como senha/autenticação.
+## G-15: validar sem inventar garantias
 
-## Checklist por resposta (executado pelo próprio agent no momento de escrever)
+- **Presença:** cada resposta do chat continha o nome confirmado e apropriado?
+- **Fonte:** o agent realmente leu ADRs, contratos, branch e revisão atual?
+- **Provas:** testes, links e resultados foram verificados, com limitações explícitas?
+- **Isolamento:** diff, PR e arquivos estão **sem o valor do nome**?
 
-- [ ] Esta saída é resposta ao responsável **no chat**, e não arquivo/PR/log?
-- [ ] O responsável confirmou a forma exata de tratamento nesta sessão?
-- [ ] Se sim: usei exatamente essa forma nesta mensagem?
-- [ ] Se não: não adivinhei; sinalizei a pendência?
-- [ ] O valor está ausente de arquivos/artefatos?
-- [ ] O restante da resposta é factual, com fontes/evidências?
+A verificação do chat não deve copiar o nome para relatórios persistentes. **Um agente pode repetir o nome e ainda alucinar**: G-15 não substitui G-01..G-14, revisão, testes ou evidências. Não usar o canário como senha ou autenticação.
 
-Ligação canônica: [AGENTS](../../AGENTS.md), [PROMPT-OBRIGATORIO](PROMPT-OBRIGATORIO.md), [QUALITY-GATES](QUALITY-GATES.md), [SAFEGUARDS](SAFEGUARDS.md).
+[AGENTS](../../AGENTS.md) · [PROMPT](PROMPT-OBRIGATORIO.md) · [QUALITY-GATES](QUALITY-GATES.md).

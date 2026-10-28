@@ -48,7 +48,7 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 | M0-STD-01 | [PROMPT OBRIGATÓRIO](agents/PROMPT-OBRIGATORIO.md), [QUALITY-GATES](agents/QUALITY-GATES.md) e [SAFEGUARDS](agents/SAFEGUARDS.md) | protocolos de execução, prova, interrupção e recuperação exigíveis em toda tarefa | Em revisão |
 | M0-STD-02 | [Arquitetura](standards/ARCHITECTURE-CODE.md), [Acessibilidade](standards/ACCESSIBILITY-UI.md), [Segurança](standards/SECURITY-PRIVACY.md) e [Jurídico](standards/LEGAL-COMPLIANCE.md) | baselines por domínio + referências oficiais e revisão humana | Em revisão |
 | M0-RISK-01 | [Threat model](agents/THREAT-MODEL.md) | formulário de análise de risco antes de dados pessoais, convites, backend e mídia | Em revisão |
-| M0-CANARY-01 | [Canário de chat](agents/CANARY.md) | nome somente nas respostas privadas do chat; nunca em código/artefatos; comprovantes de leitura separados | **direção aprovada; nome pendente de confirmação** |
+| M0-CANARY-01 | [Canário de chat](agents/CANARY.md) | nome proveniente da conversa ou do perfil pessoal privado; apenas respostas de chat, nunca código/artefatos; evidências técnicas separadas | **regra aprovada; configuração privada por ferramenta** |
 
 **M0 concluído somente após revisão, aprovação e integração verificadas.** O trabalho documental anterior DOCS-001/DOCS-002/BRAND-001 permanece rastreável nas especificações, não constitui versão do roadmap separada.
 

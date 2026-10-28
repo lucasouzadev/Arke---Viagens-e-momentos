@@ -23,7 +23,7 @@
 ## Canário de chat e segurança da governança
 
 - **Decisão aprovada:** cada mensagem do agent no chat deve incluir o nome de tratamento explicitamente confirmado pelo responsável; o valor nunca integra código, docs, PR, logs ou artefatos (ADR-008).
-- **Pendente:** a forma exata de tratamento será informada pelo responsável na conversa da sessão. Não inferir pelo GitHub.
+- **Regra confirmada:** o tratamento foi informado em conversa; novas sessões podem ler o valor de preferências privadas persistentes de cada ferramenta. A configuração dessas ferramentas é externa ao GitHub e não pode ser atestada por este repositório.
 - **Validação:** nome é sinal simples de protocolo, não prova anti-alucinação; revisar fontes, SHA, testes e evidências.
 
 ## Viagem em grupo

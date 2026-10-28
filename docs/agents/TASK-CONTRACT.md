@@ -23,7 +23,7 @@
 | `handoff` | pendências e instrução para próxima pessoa/agente |
 | `risco` | P0/P1/P2/P3, ameaça/impacto e salvaguarda |
 | `gates` | G-01..G-15 de [QUALITY-GATES](QUALITY-GATES.md), estado e evidência |
-| `canarioChat` | configuração efêmera fornecida pelo responsável **somente no chat**; documento apenas registra status sem nome |
+| `canarioChat` | preferência pessoal privada e persistente do agent, ou instrução explícita na conversa; documento apenas registra status sem nome |
 | `compliance` | LGPD/LBI/loja/licenças aplicáveis ou justificativa de não aplicabilidade |
 
 ## Modelo copiável
