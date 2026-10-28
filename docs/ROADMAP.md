@@ -1,35 +1,118 @@
-# Roadmap — documentar, revisar, construir
+# ROADMAP — Plano principal do Arke
 
-| ID | Entrega | Estado |
+**Documento canônico e único de planejamento.** Não criar ROADMAP-V2, ROADMAP-FINAL nem cópias por agente. Revisão proposta em 27/10/2026, pendente de integração do PR documental. Para andamento factual leia [STATUS](STATUS.md); para continuidade leia [HANDOFF](agents/HANDOFF.md).
+
+## 1. Objetivo e fronteira atual
+
+O Arke é um app de planejamento de viagens solo ou em grupo com uma home de **dois cartões** (mapa, navegação e conteúdo); iOS SwiftUI Liquid nos controles e Android Compose Flat; um azul opaco, restante da aparência automática do dispositivo. [Visão](produto/VISAO.md) · [ADRs](decisoes/README.md).
+
+**Fase atual: somente documentação.** M5 (código de app) e workflows de publicação estão explicitamente bloqueados até nova autorização. Planejar algo não concede permissão de executar.
+
+## 2. Convenções de trabalho
+
+Estados permitidos:
+- **Proposto**: ideia ou especificação que ainda depende de decisão.
+- **Aprovado**: direção autorizada, sem significar código pronto.
+- **Em andamento**: trabalho ativo com branch/issue/PR identificável.
+- **Em revisão**: artefato submetido, aguardando aceite/merge.
+- **Bloqueado**: pré-condição faltante ou autorização ausente.
+- **Concluído**: critérios atendidos com evidência e integração confirmada quando aplicável.
+
+Tarefas usam IDs **M{n}-ÁREA-NN**, contrato [TASK-CONTRACT](agents/TASK-CONTRACT.md), revisões [REVIEW-PROTOCOL](agents/REVIEW-PROTOCOL.md) e handoff obrigatório. Não atribuir prazo ou responsável inventado.
+
+## 3. Marcos e dependências
+
+| Marco | Propósito | Dependências | Estado factual |
+| --- | --- | --- | --- |
+| **M0 — Governança e documentação** | Orientar agents, consolidar roadmap/status/changelog, fechar decisões | docs e ADRs existentes | **Em revisão no PR #1** |
+| **M1 — Contratos de UX/UI** | Detalhar relógio, carrossel, Pins, dois cartões, motion e acessibilidade | M0 + decisões de design pendentes | Planejado |
+| **M2 — Arquitetura nativa** | Desenhar módulos, fronteiras e equivalência iOS/Android, persistência e mapa | M0 e contratos mínimos de M1 | Planejado |
+| **M3 — Domínio e colaboração** | Formalizar Trip, Place, Pin, grupo, gasto, cofrinho, avaliação, stamp | M0 e decisões de privacidade/finanças | Planejado |
+| **M4 — Qualidade e distribuição** | Gates verificáveis, CI seguro futuro, plano TestFlight/APK e release | M1–M3 especificados | Planejado, **sem configurar pipelines** |
+| **M5 — Implementação nativa** | Código SwiftUI/Compose, testes reais, builds | M1–M4 aprovados + autorização explícita | **Bloqueado** |
+
+Marcos documentais podem evoluir em paralelo **quando não dependerem de decisões contraditórias**. M5 não é desbloqueado por passagem do tempo ou fechamento automático do PR.
+
+## 4. Backlog por marco
+
+### M0 — Agent Foundation (prioridade atual)
+
+| Tarefa | Entrega | Critério de aceite documental | Estado |
+| --- | --- | --- | --- |
+| M0-AGENT-01 | [AGENTS.md](../AGENTS.md) | fonte da verdade, regras, limites e leitura inicial | Em revisão |
+| M0-PLAN-01 | **Este ROADMAP**, sem sufixo | marcos, dependências, estados, legado unificado | Em revisão |
+| M0-PROC-01 | [WORKFLOW](agents/WORKFLOW.md), [TASK-CONTRACT](agents/TASK-CONTRACT.md), [REVIEW](agents/REVIEW-PROTOCOL.md) | tarefa/handoff/revisão reproduzíveis | Em revisão |
+| M0-CONT-01 | [STATUS](STATUS.md) e [HANDOFF](agents/HANDOFF.md) | progresso factual e retomada entre agents | Em revisão |
+| M0-NEWS-01 | [CHANGELOG](../CHANGELOG.md), [guia editorial](agents/CHANGELOG-GUIDE.md) e [modal futuro](releases/NEWS-MODAL.md) | português leigo, sem alegar atualização não lançada | Em revisão |
+| M0-GATE-01 | alinhar índice/README/ADR e validar links | referências coerentes, PR para avaliação, sem código | Em revisão |
+
+**M0 concluído somente após revisão, aprovação e integração verificadas.** O trabalho documental anterior DOCS-001/DOCS-002/BRAND-001 permanece rastreável nas especificações, não constitui versão do roadmap separada.
+
+### M1 — UX/UI e interação
+
+| Tarefa | Entrega | Dependência | Estado |
+| --- | --- | --- | --- |
+| M1-UX-01 | validar [DESIGN-004](design/DESIGN-004.md): relógio/carrossel/detents | decidir fallbacks e physics | Proposto |
+| M1-UX-02 | validar estados vazios, Pin pendente, drafts [UX-001](produto/UX-001-ESTADOS.md) | M1-UX-01 | Proposto |
+| M1-DESIGN-01 | finalizar identidade e [azul único](brand/THEME-001.md) | HEX/ícones/stamps | Proposto |
+| M1-A11Y-01 | layout responsivo, fontes, safe areas e gestos alternativos | DESIGN + [QUALITY](qualidade/QUALIDADE.md) | Proposto |
+| M1-UI-01 | mockups originais dos estados, em iOS/Android claro/escuro do dispositivo | direções UX/design aprovadas | Proposto |
+
+### M2 — Arquitetura nativa (somente especificar)
+
+| Tarefa | Entrega | Estado |
 | --- | --- | --- |
-| DOCS-001 | visão, escopo, jornadas, ADRs e qualidade | publicada |
-| DESIGN-001 | dois cartões sem barra inferior | direção aprovada |
-| DESIGN-002 | relógio, carrossel e mapa sincronizado | direção aprovada |
-| DESIGN-003 | Liquid iOS e Flat Android | direção aprovada; detalhes a validar |
-| DOCS-002 | aprofundar gestos, estados, visual, grupo e finanças | proposta em revisão |
-| DESIGN-004 | física e acessibilidade do relógio/carrossel | proposto |
-| DESIGN-005 | semântica visual e temas | proposto |
-| UX-001 | estados vazios, Pin pendente, rascunhos | proposto |
-| GROUP-001 | convites, papéis e visibilidade | proposto |
-| FINANCE-001 | gastos, cofrinho e moedas | proposto |
-| QUALITY-002 | cenários de validação | proposto |
-| BRAND-001 | linguagem da marca, nome, símbolo e iconografia | **proposto em revisão** |
-| THEME-001 | **azul único e tema nativo** (regra aprovada); hex candidato e contraste pendentes | **regra aprovada; tom em revisão** |
-| STAMPS-001 | memórias em selos, variantes, dados e privacidade | **proposto em revisão** |
-| PLATFORM-001 | handoff nativo de estilo | **proposto em revisão** |
-| BRAND-QUALITY-001 | requisitos de validação visual | **proposto em revisão** |
-| DOMAIN-001 | modelo mínimo e papéis definitivos | pendente |
-| NATIVE-001 | implementação SwiftUI | **adiada por decisão do usuário** |
-| NATIVE-002 | implementação Jetpack Compose | **adiada por decisão do usuário** |
-| BUILD-001 | GitHub Actions, TestFlight, APK | **adiada; documentação apenas** |
+| M2-IOS-01 | fronteiras de módulos SwiftUI/MapKit, navegação e persistência | Proposto |
+| M2-ANDROID-01 | fronteiras Compose/mapa, navegação e persistência | Proposto |
+| M2-CONTRACT-01 | estados/eventos semânticos equivalentes, lifecycle, offline e fallback | Proposto |
+| M2-SECURITY-01 | modelo de dados, credenciais, separação de ambientes e privacidade | Proposto |
 
-## Ordem de revisão proposta
+### M3 — Domínio do produto
 
-1. Revisar comportamento do relógio, carrossel e detents em DESIGN-004.
-2. Revisar proposta de marca em [BRAND-001](brand/BRAND-001.md) e apenas o **tom exato do azul único** / contraste em [THEME-001](brand/THEME-001.md); temas são automáticos.
-3. Selecionar vocabulário visual dos [STAMPS-001](brand/STAMPS-001.md): formato base, registro e compartilhamento.
-4. Criar mockups **originais** de iOS Liquid e Android Flat para quatro estados; validar modo claro/escuro e acessibilidade.
-5. Revisar UX-001 e QUALITY-002; resolver grupo/finanças.
-6. Registrar aprovações em ADRs e atualizar documentos; somente depois iniciar planejamento de código.
+| Tarefa | Entrega | Estado |
+| --- | --- | --- |
+| M3-DOMAIN-01 | contratos de Place, Pin e Trip | Proposto |
+| M3-GROUP-01 | convites, papéis e visibilidade privados/compartilhados | Proposto |
+| M3-FINANCE-01 | gastos, cofrinho declarativo, moedas e rateio | Proposto |
+| M3-MEMORY-01 | avaliações, fotos, stamps e direitos de mídia | Proposto |
+| M3-SYNC-01 | política de conflito/autoria e retenção | Proposto |
 
-**Gate de programação futura:** autorização explícita, domínio/privacidade acordados, mapa escolhido, documentação consolidada e quality gates definidos.
+### M4 — Qualidade, automação e atualização
+
+| Tarefa | Entrega | Estado |
+| --- | --- | --- |
+| M4-QA-01 | matriz E2E/Maestro, XCUITest/Compose UI e viewport | Proposto |
+| M4-CI-01 | arquitetura de CI separando PR sem segredo e release protegido | Proposto |
+| M4-RELEASE-01 | assinatura, TestFlight/APK e verificação de disponibilização | Proposto |
+| M4-NEWS-01 | contrato para publicar notas, README e modal [NEWS-MODAL](releases/NEWS-MODAL.md) | Proposto |
+
+### M5 — Execução
+
+**Bloqueado:** implementação SwiftUI/Compose e builds só após autorização explícita, aceites e gates. Nenhuma tarefa executável aqui tem permissão automática.
+
+## 5. Relação com documentação anterior (sem duplicar roadmap)
+
+- **DOCS-001**: visão, escopo, jornada e ADRs → base de M0.
+- **DOCS-002**: DESIGN-004/005, UX/GROUP/FINANCE/QUALITY-002 → propostas distribuídas por M1–M4.
+- **BRAND-001**: linguagem, stamps, paleta simplificada → M1-DESIGN-01.
+- **DESIGN-001/002/003**: decisões de estrutura e direção visual → insumos de M1/M2.
+- **QUALITY-001/002**: base de revisão → critérios de M4, aplicáveis desde M0.
+- **BUILD-001**: plano de releases futuro → M4, **não um workflow configurado**.
+
+## 6. Atualização de status e changelog
+
+- Mudança de marco/tarefa → atualizar **este ROADMAP** e **STATUS**, com evidências e links.
+- Pausa/transferência → atualizar **HANDOFF**.
+- Mudança perceptível ao público → avaliar **CHANGELOG**; antes do lançamento, falar de progresso do projeto; após release confirmada, informar novidades realmente disponíveis.
+- Não criar um segundo changelog técnico concorrente para o público. Históricos de commits/PRs ficam no GitHub.
+
+## 7. Gates para implementação
+
+- [ ] M0 aprovado e integrado.
+- [ ] Contratos mínimos M1/M2/M3 aprovados com pendências explícitas.
+- [ ] Política de mapas, privacidade, sync e financiamento informativo definida.
+- [ ] Matriz QA e segurança de build aprovada.
+- [ ] Autorização expressa para iniciar app nativo e CI.
+- [ ] Nenhuma decisão aceita contradita.
+
+[AGENTS](../AGENTS.md) · [STATUS](STATUS.md) · [HANDOFF](agents/HANDOFF.md) · [Índice](INDEX.md).

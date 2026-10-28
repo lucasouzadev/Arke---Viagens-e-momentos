@@ -1,13 +1,29 @@
 # Índice e maturidade da documentação
 
-Versão principal: **ARKE-DOCS-001**; complemento de UX **ARKE-DOCS-002**; complemento visual **ARKE-BRAND-001 (proposto)** · pt-BR.
+**Documento de navegação do Arke.** ROADMAP é [único e canônico](ROADMAP.md); andamento em [STATUS](STATUS.md), continuação em [HANDOFF](agents/HANDOFF.md).
 
-## Legenda
+## Estados
 
 - **Aprovado:** direção explicitamente aceita.
-- **Proposto:** requer validação; não transforma hipótese em requisito.
-- **Pendente:** decisão não tomada.
-- **Concluído:** entrega acompanhada de evidência; documentação não equivale a app compilado.
+- **Proposto:** ainda depende de decisão.
+- **Em revisão:** documento enviado para PR, não necessariamente integrado.
+- **Concluído:** entrega provada e integrada quando aplicável; documentação não implica app executável.
+
+## Primeiro para agents
+
+| Documento | Responsabilidade |
+| --- | --- |
+| [AGENTS.md](../AGENTS.md) | regras inegociáveis e leitura inicial |
+| [ROADMAP](ROADMAP.md) | fonte única de milestones, tarefas, dependências |
+| [STATUS](STATUS.md) | estado factual da execução |
+| [HANDOFF](agents/HANDOFF.md) | continuidade entre agents |
+| [WORKFLOW](agents/WORKFLOW.md) | processo de trabalho |
+| [TASK-CONTRACT](agents/TASK-CONTRACT.md) | formato das tarefas |
+| [REVIEW-PROTOCOL](agents/REVIEW-PROTOCOL.md) | gates e revisões |
+| [CHANGELOG](../CHANGELOG.md) | novidades do projeto em linguagem simples |
+| [CHANGELOG-GUIDE](agents/CHANGELOG-GUIDE.md) | regras para changelog sem jargão |
+| [NEWS-MODAL](releases/NEWS-MODAL.md) | comportamento futuro de novidades dentro do app |
+| [ADR-007](decisoes/ADR-007.md) | decisão de governança e roadmap único |
 
 ## Produto e interação
 
@@ -16,43 +32,42 @@ Versão principal: **ARKE-DOCS-001**; complemento de UX **ARKE-DOCS-002**; compl
 | [Visão](produto/VISAO.md) | direção aprovada |
 | [Escopo](produto/ESCOPO.md) | cinco contextos aprovados; detalhes propostos |
 | [Jornadas](produto/JORNADAS.md) | fluxos propostos |
-| [DESIGN-001 — dois cartões](design/DESIGN-001.md) | direção aprovada |
-| [DESIGN-002 — relógio e carrossel](design/DESIGN-002.md) | direção aprovada conceitualmente |
-| [DESIGN-003 — Liquid e Flat](design/DESIGN-003.md) | direção aprovada; tokens a validar |
-| [DESIGN-004 — física de navegação](design/DESIGN-004.md) | proposta |
-| [DESIGN-005 — sistema visual](design/DESIGN-005.md) | proposta |
-| [INTERACTIONS — estado](design/INTERACTIONS.md) | contrato conceitual proposto |
-| [UX-001 — estados e rascunhos](produto/UX-001-ESTADOS.md) | proposta |
-| [GROUP-001 — solo e grupo](produto/GROUP-001.md) | proposta |
-| [FINANCE-001 — gastos e cofrinho](produto/FINANCE-001.md) | proposta |
+| [DESIGN-001](design/DESIGN-001.md) | dois cartões aprovados |
+| [DESIGN-002](design/DESIGN-002.md) | relógio/carrossel aprovados conceitualmente |
+| [DESIGN-003](design/DESIGN-003.md) | Liquid/Flat aprovados em direção |
+| [DESIGN-004](design/DESIGN-004.md) | física e fallbacks propostos |
+| [DESIGN-005](design/DESIGN-005.md) | sistema visual proposto |
+| [INTERACTIONS](design/INTERACTIONS.md) | máquina de estados conceitual |
+| [UX-001](produto/UX-001-ESTADOS.md) | estados/rascunhos propostos |
+| [GROUP-001](produto/GROUP-001.md) | papéis e fluxos propostos |
+| [FINANCE-001](produto/FINANCE-001.md) | finanças informativas propostas |
 
-## Marca e estilos — novo material em revisão
-
-| Documento | Situação |
-| --- | --- |
-| [Índice de identidade](brand/README.md) | orientação |
-| [BRAND-001 — linguagem da marca](brand/BRAND-001.md) | **nova proposta** |
-| [THEME-001 — azul único e tema do dispositivo](brand/THEME-001.md) | **regra aprovada; hex candidato** |
-| [STAMPS-001 — memórias colecionáveis](brand/STAMPS-001.md) | **nova proposta** |
-| [PLATFORM-001 — handoff nativo](brand/PLATFORM-001.md) | **nova proposta** |
-| [BRAND-QUALITY-001 — critérios de revisão](brand/BRAND-QUALITY-001.md) | **nova proposta** |
-
-## Arquitetura, qualidade e gestão
+## Marca e estilos
 
 | Documento | Situação |
 | --- | --- |
-| [Arquitetura nativa](arquitetura/ESTRATEGIA-NATIVA.md) | direção aprovada, implementação adiada |
-| [Domínio conceitual](arquitetura/DOMINIO.md) | entidades propostas |
+| [Índice da marca](brand/README.md) | orientação |
+| [BRAND-001](brand/BRAND-001.md) | linguagem gráfica proposta |
+| [THEME-001](brand/THEME-001.md) | uma cor azul e tema do device aprovados; HEX proposto |
+| [STAMPS-001](brand/STAMPS-001.md) | estilo de memórias proposto |
+| [PLATFORM-001](brand/PLATFORM-001.md) | equivalência visual nativa |
+| [BRAND-QUALITY-001](brand/BRAND-QUALITY-001.md) | critérios propostos |
+
+## Arquitetura, segurança e testes
+
+| Documento | Situação |
+| --- | --- |
+| [Estratégia nativa](arquitetura/ESTRATEGIA-NATIVA.md) | direção aprovada, sem código |
+| [Domínio](arquitetura/DOMINIO.md) | entidades propostas |
 | [Privacidade](arquitetura/PRIVACIDADE.md) | princípios propostos |
-| [QUALITY-001 — gates](qualidade/QUALIDADE.md) | critérios para implementação futura |
-| [QUALITY-002 — cenários por fluxo](qualidade/MATRIZ-UX-002.md) | proposta |
-| [BUILD-001 — distribuição](engenharia/DISTRIBUICAO.md) | proposta; sem workflows |
-| [Roadmap](ROADMAP.md) | atualizado |
-| [Questões abertas](OPEN-QUESTIONS.md) | decisões ainda pendentes |
-| [ADRs, incluindo ADR-006 da cor única](decisoes/README.md) | decisões já aceitas |
+| [QUALITY-001](qualidade/QUALIDADE.md) | gates obrigatórios futuros |
+| [QUALITY-002](qualidade/MATRIZ-UX-002.md) | cenários de teste, não executados |
+| [Distribuição](engenharia/DISTRIBUICAO.md) | futura, sem workflows |
+| [Questões abertas](OPEN-QUESTIONS.md) | decisões pendentes |
+| [ADRs](decisoes/README.md) | direções aceitas |
 
-## Fonte da verdade
+## Hierarquia da fonte de verdade
 
-Visão → DESIGN-001/002/003 → complementos propostos DESIGN-004/005 e ARKE-BRAND-001 → UX/domínio/privacidade → qualidade/roadmap → futuras implementações.
+**ADRs aceitos e decisões explícitas** → especificações aprovadas → propostas → tarefas/roadmap → STATUS factual → HANDOFF contextual. README e CHANGELOG comunicam o projeto e **não devem impor comportamento técnico novo**.
 
-**Documentos propostos não são aprovação final.** Nenhum app, SDK, workflow de compilação, segredo ou integração foi criado nesta fase.
+Nenhuma funcionalidade de app, CI, release ou modal foi implementada com esta documentação.
