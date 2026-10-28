@@ -55,6 +55,7 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 
 | Tarefa | Entrega | Dependência | Estado |
 | --- | --- | --- | --- |
+| M1-CONTRACT-01 | [Contrato M1 de UX/UI](design/M1-UX-CONTRACT.md) | proposta baseada em DESIGN-001/002/003 e padrões dos agents | Em revisão como proposta |
 | M1-UX-01 | validar [DESIGN-004](design/DESIGN-004.md): relógio/carrossel/detents | decidir fallbacks e physics | Proposto |
 | M1-UX-02 | validar estados vazios, Pin pendente, drafts [UX-001](produto/UX-001-ESTADOS.md) | M1-UX-01 | Proposto |
 | M1-DESIGN-01 | finalizar identidade e [azul único](brand/THEME-001.md) | HEX/ícones/stamps | Proposto |

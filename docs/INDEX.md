@@ -41,6 +41,7 @@
 | [DESIGN-003](design/DESIGN-003.md) | Liquid/Flat aprovados em direção |
 | [DESIGN-004](design/DESIGN-004.md) | física e fallbacks propostos |
 | [DESIGN-005](design/DESIGN-005.md) | sistema visual proposto |
+| [M1-UX-CONTRACT](design/M1-UX-CONTRACT.md) | contrato conceitual de UI para agents, em revisão |
 | [INTERACTIONS](design/INTERACTIONS.md) | máquina de estados conceitual |
 | [UX-001](produto/UX-001-ESTADOS.md) | estados/rascunhos propostos |
 | [GROUP-001](produto/GROUP-001.md) | papéis e fluxos propostos |
