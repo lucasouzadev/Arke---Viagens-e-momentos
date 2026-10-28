@@ -30,6 +30,9 @@ Veja o [**CHANGELOG — Novidades do Arke**](CHANGELOG.md), escrito sem linguage
 | Plano principal | [ROADMAP](docs/ROADMAP.md) |
 | Situação atual | [STATUS](docs/STATUS.md) |
 | Instruções dos agents | [AGENTS.md](AGENTS.md) |
+| Prompt universal dos agents | [PROMPT-OBRIGATORIO](docs/agents/PROMPT-OBRIGATORIO.md) |
+| Critérios de segurança e qualidade | [QUALITY-GATES](docs/agents/QUALITY-GATES.md) · [SAFEGUARDS](docs/agents/SAFEGUARDS.md) |
+| Padrões arquiteturais e legais | [Arquitetura](docs/standards/ARCHITECTURE-CODE.md) · [Acessibilidade](docs/standards/ACCESSIBILITY-UI.md) · [Segurança](docs/standards/SECURITY-PRIVACY.md) · [Jurídico](docs/standards/LEGAL-COMPLIANCE.md) |
 | Continuidade entre agents | [HANDOFF](docs/agents/HANDOFF.md) |
 | Guia de alterações públicas | [CHANGELOG-GUIDE](docs/agents/CHANGELOG-GUIDE.md) |
 | Futuro modal de novidades | [NEWS-MODAL](docs/releases/NEWS-MODAL.md) |

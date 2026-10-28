@@ -45,6 +45,9 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 | M0-CONT-01 | [STATUS](STATUS.md) e [HANDOFF](agents/HANDOFF.md) | progresso factual e retomada entre agents | Em revisão |
 | M0-NEWS-01 | [CHANGELOG](../CHANGELOG.md), [guia editorial](agents/CHANGELOG-GUIDE.md) e [modal futuro](releases/NEWS-MODAL.md) | português leigo, sem alegar atualização não lançada | Em revisão |
 | M0-GATE-01 | alinhar índice/README/ADR e validar links | referências coerentes, PR para avaliação, sem código | Em revisão |
+| M0-STD-01 | [PROMPT OBRIGATÓRIO](agents/PROMPT-OBRIGATORIO.md), [QUALITY-GATES](agents/QUALITY-GATES.md) e [SAFEGUARDS](agents/SAFEGUARDS.md) | protocolos de execução, prova, interrupção e recuperação exigíveis em toda tarefa | Em revisão |
+| M0-STD-02 | [Arquitetura](standards/ARCHITECTURE-CODE.md), [Acessibilidade](standards/ACCESSIBILITY-UI.md), [Segurança](standards/SECURITY-PRIVACY.md) e [Jurídico](standards/LEGAL-COMPLIANCE.md) | baselines por domínio + referências oficiais e revisão humana | Em revisão |
+| M0-RISK-01 | [Threat model](agents/THREAT-MODEL.md) | formulário de análise de risco antes de dados pessoais, convites, backend e mídia | Em revisão |
 
 **M0 concluído somente após revisão, aprovação e integração verificadas.** O trabalho documental anterior DOCS-001/DOCS-002/BRAND-001 permanece rastreável nas especificações, não constitui versão do roadmap separada.
 
@@ -97,6 +100,8 @@ Marcos documentais podem evoluir em paralelo **quando não dependerem de decisõ
 - **BRAND-001**: linguagem, stamps, paleta simplificada → M1-DESIGN-01.
 - **DESIGN-001/002/003**: decisões de estrutura e direção visual → insumos de M1/M2.
 - **QUALITY-001/002**: base de revisão → critérios de M4, aplicáveis desde M0.
+- **PROMPT-OBRIGATORIO / QUALITY-GATES / SAFEGUARDS**: regras transversais que começam em M0 e valem para todo marco, com execução de testes nativos apenas após autorização.
+- **Standards de arquitetura, acessibilidade, segurança e jurídico**: checklists de risco e desenho; não equivalem a certificações ou parecer jurídico.
 - **BUILD-001**: plano de releases futuro → M4, **não um workflow configurado**.
 
 ## 6. Atualização de status e changelog

@@ -28,10 +28,11 @@ Registros históricos importantes devem ficar em comentários de PR ou arquivos 
 - DESIGN-004/005, GROUP-001, FINANCE-001, STAMPS e detalhes visuais seguem como **propostas**.
 - Cor de marca: **um azul sólido**; tonalidade exata candidata, não aprovada. Tema automático por dispositivo.
 - M0 deve substituir o ROADMAP existente por uma estrutura **única** em `docs/ROADMAP.md`; **não** criar `ROADMAP-V2.md`.
+- M0 foi ampliado com **PROMPT-OBRIGATORIO / QUALITY-GATES / SAFEGUARDS / THREAT-MODEL** e quatro standards: arquitetura, acessibilidade, segurança e jurídico. São direções documentais; testes/release e conformidade não foram verificados em produção.
 
 ### Próximo passo após este PR
 
-1. Revisar `AGENTS.md`, `docs/ROADMAP.md`, `docs/STATUS.md` e protocolos de agents no mesmo PR.
+1. Revisar `AGENTS.md`, `docs/agents/PROMPT-OBRIGATORIO.md`, `QUALITY-GATES.md`, `SAFEGUARDS.md`, os quatro arquivos em `docs/standards/`, `docs/ROADMAP.md`, `docs/STATUS.md` e o restante dos protocolos no mesmo PR.
 2. Revisar `CHANGELOG.md` como texto público de progresso, sem alegar release de app, e o contrato do modal futuro.
 3. Confrontar diferenças entre main/branch; revisar e **só mesclar mediante aprovação**.
 4. Depois da aprovação, selecionar primeira tarefa documental M0 aberta para execução, mantendo NATIVE/BUILD bloqueados.

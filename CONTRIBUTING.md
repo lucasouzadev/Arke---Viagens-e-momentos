@@ -4,7 +4,7 @@ O Arke é um projeto **documentation-first**. Nesta fase, contribuições devem 
 
 ## Antes de abrir uma alteração
 
-1. Leia [AGENTS.md](AGENTS.md) e [ROADMAP](docs/ROADMAP.md).
+1. Leia [AGENTS.md](AGENTS.md) e [ROADMAP](docs/ROADMAP.md). A execução de qualquer agent também exige [PROMPT-OBRIGATORIO](docs/agents/PROMPT-OBRIGATORIO.md), [QUALITY-GATES](docs/agents/QUALITY-GATES.md) e [SAFEGUARDS](docs/agents/SAFEGUARDS.md); documentos técnicos/jurídicos aplicam-se conforme risco.
 2. Consulte [STATUS](docs/STATUS.md), [HANDOFF](docs/agents/HANDOFF.md), [ADRs](docs/decisoes/README.md) e a especificação do problema.
 3. Estruture o trabalho com [TASK-CONTRACT](docs/agents/TASK-CONTRACT.md).
 4. Preserve mapa-first, dois cartões, ausência de tab bar, relógio/carrossel, natividade independente e **um azul opaco com tema do dispositivo**.

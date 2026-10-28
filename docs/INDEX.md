@@ -20,6 +20,10 @@
 | [WORKFLOW](agents/WORKFLOW.md) | processo de trabalho |
 | [TASK-CONTRACT](agents/TASK-CONTRACT.md) | formato das tarefas |
 | [REVIEW-PROTOCOL](agents/REVIEW-PROTOCOL.md) | gates e revisões |
+| [PROMPT-OBRIGATORIO](agents/PROMPT-OBRIGATORIO.md) | instrução mestre para todos os agents |
+| [QUALITY-GATES](agents/QUALITY-GATES.md) | gates G-01 a G-14 e classificação de risco |
+| [SAFEGUARDS](agents/SAFEGUARDS.md) | parada, contenção, rollback e recuperação |
+| [THREAT-MODEL](agents/THREAT-MODEL.md) | análise de ameaças por feature |
 | [CHANGELOG](../CHANGELOG.md) | novidades do projeto em linguagem simples |
 | [CHANGELOG-GUIDE](agents/CHANGELOG-GUIDE.md) | regras para changelog sem jargão |
 | [NEWS-MODAL](releases/NEWS-MODAL.md) | comportamento futuro de novidades dentro do app |
@@ -58,6 +62,10 @@
 | Documento | Situação |
 | --- | --- |
 | [Estratégia nativa](arquitetura/ESTRATEGIA-NATIVA.md) | direção aprovada, sem código |
+| [ARCHITECTURE-CODE](standards/ARCHITECTURE-CODE.md) | arquitetura e qualidade de código |
+| [ACCESSIBILITY-UI](standards/ACCESSIBILITY-UI.md) | UX acessível e responsiva |
+| [SECURITY-PRIVACY](standards/SECURITY-PRIVACY.md) | OWASP MASVS e dados pessoais |
+| [LEGAL-COMPLIANCE](standards/LEGAL-COMPLIANCE.md) | LGPD, LBI, lojas, mídia e proteção de menores |
 | [Domínio](arquitetura/DOMINIO.md) | entidades propostas |
 | [Privacidade](arquitetura/PRIVACIDADE.md) | princípios propostos |
 | [QUALITY-001](qualidade/QUALIDADE.md) | gates obrigatórios futuros |

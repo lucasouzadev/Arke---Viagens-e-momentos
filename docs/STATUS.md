@@ -11,12 +11,15 @@
 - **CI, TestFlight, APK, backend e deploy:** não configurados nesta fase.
 - **Decisões aceitas:** duas bases nativas, dois cartões, Pin independente, Cofrinho informativo, documentation-first, uma cor azul opaca e tema do dispositivo.
 - **Ainda propostas:** física detalhada, identidade final, stamps, grupos, finanças, permissões, fornecedor de mapa, modelo de dados final.
+- **Governança M0 adicionada à revisão:** [prompt universal](agents/PROMPT-OBRIGATORIO.md), [gates de qualidade](agents/QUALITY-GATES.md), [salvaguardas](agents/SAFEGUARDS.md), [modelo de risco](agents/THREAT-MODEL.md), padrões de arquitetura, acessibilidade, segurança e jurídico em [standards](standards/ARCHITECTURE-CODE.md).
+- **Verificações reais do conjunto M0:** texto, coerência de links e escopo documental; nenhum teste de segurança real, conformidade jurídica ou app nativo foi executado.
 
 ## Milestones — status, não previsão
 
 | Marco | Estado | Evidência / restrição |
 | --- | --- | --- |
 | M0 — governança agents e documentação | **em revisão** | `AGENTS.md`, ROADMAP unificado, workflow, handoff/status e changelog propostos neste PR |
+| M0 — baselines interdisciplinares | **em revisão** | prompt obrigatório, G-01..G-14, threat model, arquitetura, acessibilidade, segurança e jurídico na mesma branch |
 | M1 — contratos de UI | **planejado** | DESIGN-001/002/003 aprovados em conceito; DESIGN-004/005 propostos |
 | M2 — arquitetura nativa | **planejado** | direções SwiftUI/Compose documentadas; sem código |
 | M3 — domínio de viagens | **planejado** | entidades, grupo e finanças em proposta |

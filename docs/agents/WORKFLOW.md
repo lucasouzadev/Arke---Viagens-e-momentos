@@ -6,7 +6,7 @@
 
 Ler `AGENTS.md`, `docs/ROADMAP.md`, `docs/STATUS.md`, `docs/agents/HANDOFF.md`, ADRs e especificações da tarefa. Verificar branch/PR atual; **não presumir que documentos de PR aberto já estão em main**.
 
-Confirmar: `taskId`, objetivo, tipo (documentação, design, bug, feature, segurança), prioridade, plataforma(s), dependências, decisões abertas, arquivos no escopo, condições de aceite e permissão de publicação.
+Confirmar: `taskId`, objetivo, tipo (documentação, design, bug, feature, segurança), prioridade, plataforma(s), dependências, decisões abertas, arquivos no escopo, condições de aceite e permissão de publicação. Ler também [PROMPT-OBRIGATORIO](PROMPT-OBRIGATORIO.md), [QUALITY-GATES](QUALITY-GATES.md), [SAFEGUARDS](SAFEGUARDS.md), standards e threat model quando aplicável.
 
 ## 2. Planejamento
 
@@ -33,7 +33,7 @@ Preferir PRs delimitados por marco. Respeitar origem do branch e mudanças conco
 | Testes | registrar evidência executada, falhas, não aplicável e não testado |
 | Conteúdo público | se mudou experiência de usuários, texto em linguagem simples |
 
-Para trabalho apenas documental, **não alegar** compilação, validação em simuladores ou E2E.
+Para trabalho apenas documental, **não alegar** compilação, validação em simuladores ou E2E. Classificar cada gate com evidência ou justificativa; **NÃO EXECUTADO não significa PASSOU**. Usar [QUALITY-GATES](QUALITY-GATES.md).
 
 ## 5. Entrega
 

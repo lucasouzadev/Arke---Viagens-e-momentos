@@ -1,6 +1,6 @@
 # QUALITY-001 — Critérios obrigatórios de qualidade
 
-Para **cada mudança futura** em planejamento, UX/UI ou código, avaliar iOS e Android separadamente. Não considerar mockups ou docs evidência de teste real.
+Para **cada mudança futura** em planejamento, UX/UI ou código, avaliar iOS e Android separadamente. Não considerar mockups ou docs evidência de teste real. O protocolo de comprovação e bloqueio fica em [QUALITY-GATES](../agents/QUALITY-GATES.md). **WCAG 2.2 AA é meta interna adaptada a native apps**, e OWASP MASVS é baseline de segurança, não certificação automática. Avaliação jurídica está em [LEGAL-COMPLIANCE](../standards/LEGAL-COMPLIANCE.md).
 
 ## Auditoria de interface e viewport
 

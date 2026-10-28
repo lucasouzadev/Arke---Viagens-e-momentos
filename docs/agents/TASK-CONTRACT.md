@@ -21,6 +21,9 @@
 | `provas` | docs, capturas, logs, resultados de testes ou “não executado” |
 | `notas publicas` | mudou o usuário? sim/não; texto leigo candidato |
 | `handoff` | pendências e instrução para próxima pessoa/agente |
+| `risco` | P0/P1/P2/P3, ameaça/impacto e salvaguarda |
+| `gates` | G-01..G-14 de [QUALITY-GATES](QUALITY-GATES.md), estado e evidência |
+| `compliance` | LGPD/LBI/loja/licenças aplicáveis ou justificativa de não aplicabilidade |
 
 ## Modelo copiável
 
@@ -42,8 +45,10 @@ Auditoria UX/UI e responsividade:
 - [ ] iOS (ou não aplicável, justificativa)
 - [ ] Android (ou não aplicável, justificativa)
 - [ ] safe area, teclado, overflow, temas, fontes, gestos, a11y
-Auditoria backend/segurança:
+Auditoria backend/segurança/jurídico:
 - [ ] ...
+Gates G-01..G-14: estado + evidência/justificativa
+Risco P0/P1/P2/P3 e plano de interrupção/recuperação:
 Testes planejados/executados:
 - Executado:
 - Não executado e motivo:
@@ -60,4 +65,4 @@ Próximo handoff:
 - **Código futuro:** compilação real da plataforma-alvo, regressão, safe areas, viewport, teclado, screenshots e E2E, inclusive impacto cross-platform.
 - Nunca assumir `concluído` apenas por commit, PR aberto ou revisão superficial.
 
-O agent não pode alargar escopo para “melhorar UX” contrariando dois cartões/relógio ou inventar quota/plano/funcionalidade.
+O agent não pode alargar escopo para “melhorar UX” contrariando dois cartões/relógio ou inventar quota/plano/funcionalidade. Exigir leitura de [PROMPT-OBRIGATORIO](PROMPT-OBRIGATORIO.md), [SAFEGUARDS](SAFEGUARDS.md) e os standards aplicáveis em cada execução.
