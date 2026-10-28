@@ -2,39 +2,48 @@
 
 **Um mapa, uma viagem, tudo no mesmo lugar.**
 
-O Arke é um projeto open source de planejamento de viagens solo e em grupo. A proposta é reunir Pins, roteiros, gastos, metas de economia, avaliações e memórias em uma única interface espacial.
+O Arke é um projeto aberto de planejamento de viagens solo e em grupo. Pins, roteiros, gastos, metas de economia, avaliações e memórias compõem uma única experiência centrada no mapa.
 
-**Estado em 27/10/2026:** documentação de produto e design. Não há app publicado, backend, workflows de CI, integrações financeiras ou builds distribuídos.
+> **Estado atual:** projeto **documentation-first**. Não há app, backend, CI de build, distribuição ou integração financeira nesta entrega.
 
 ## Princípios aprovados
 
-- **Uma tela, dois cartões:** mapa/Pins acima; conteúdo e navegação contextual abaixo.
-- **Sem barra de navegação inferior:** cinco categorias por um relógio/seletor dentro do cartão inferior.
-- **Carrossel horizontal** para lugares, com anterior/próximo parcialmente visíveis; **rolagem vertical** para conteúdo e stamps.
-- **Três posições:** Explorar, Equilibrado, Detalhes; puxador exclusivo redimensiona os cartões.
-- **Pins podem existir antes das viagens**; viagem solo pode se tornar colaborativa.
-- **UI nativa independente:** Swift/SwiftUI com Liquid Glass nos controles iOS; Kotlin/Compose flat no Android.
-- **Documentation-first:** não iniciar código de produção sem novo marco aprovado.
+- **Uma tela principal e dois cartões**: mapa/Pins acima, navegação e conteúdo abaixo.
+- **Sem tab bar tradicional:** relógio de cinco contextos dentro do segundo cartão.
+- **Carrossel horizontal** finito de lugares; **scroll vertical** para atividades, detalhes e stamps.
+- **Três posições do painel:** Explorar, Equilibrado e Detalhes.
+- **Pins independentes de viagens**; uma Trip pode ser solo ou compartilhada.
+- **iOS nativo em SwiftUI, Android nativo em Compose**, sem framework cross-platform para UI.
+- **Uma única cor de marca:** azul opaco; fundos, superfícies, textos e aparência Light/Dark seguem o dispositivo. HEX candidato em [THEME-001](docs/brand/THEME-001.md).
+- **Documentação antes do código**, até nova autorização.
 
-## Índice
+## Novidades do projeto
 
-| Área | Documento |
+Estamos organizando as funções de viagens, os dois cartões e como as informações serão apresentadas, antes de desenvolver o aplicativo. **Ainda não existe uma versão para instalar.**
+
+Veja o [**CHANGELOG — Novidades do Arke**](CHANGELOG.md), escrito sem linguagem técnica. Quando houver aplicativo disponível, as novidades de cada versão também poderão aparecer em um modal dentro dele (ainda não implementado).
+
+## Como o projeto é organizado
+
+| O que você procura? | Documento |
 | --- | --- |
-| Status e navegação | [Índice documental](docs/INDEX.md) |
-| Propósito | [Visão](docs/produto/VISAO.md) |
-| Cinco contextos | [Escopo](docs/produto/ESCOPO.md) |
-| Uso individual e coletivo | [Jornadas](docs/produto/JORNADAS.md) |
-| Dois cartões | [DESIGN-001](docs/design/DESIGN-001.md) |
-| Relógio, carrossel e mapa | [DESIGN-002](docs/design/DESIGN-002.md) |
-| Linguagem e movimento | [DESIGN-003](docs/design/DESIGN-003.md) |
-| Contratos de interface | [INTERACTIONS](docs/design/INTERACTIONS.md) |
-| Plano técnico nativo | [Arquitetura](docs/arquitetura/ESTRATEGIA-NATIVA.md) |
-| Entidades | [Domínio](docs/arquitetura/DOMINIO.md) |
-| Segurança | [Privacidade](docs/arquitetura/PRIVACIDADE.md) |
-| Auditoria e testes | [QUALIDADE](docs/qualidade/QUALIDADE.md) |
-| Distribuição futura | [BUILD-001](docs/engenharia/DISTRIBUICAO.md) |
-| Etapas | [Roadmap](docs/ROADMAP.md) |
-| Decisões pendentes | [Questões abertas](docs/OPEN-QUESTIONS.md) |
-| Decisões registradas | [ADRs](docs/decisoes/README.md) |
+| Plano principal | [ROADMAP](docs/ROADMAP.md) |
+| Situação atual | [STATUS](docs/STATUS.md) |
+| Instruções dos agents | [AGENTS.md](AGENTS.md) |
+| Prompt universal dos agents | [PROMPT-OBRIGATORIO](docs/agents/PROMPT-OBRIGATORIO.md) |
+| Canário privado de chat | [CANARY](docs/agents/CANARY.md) — nenhuma identificação pessoal registrada no repo |
+| Contratos de dados propostos | [M3 Data](docs/arquitetura/M3-DATA-CONTRACT.md) · [Permissões](docs/arquitetura/PERMISSIONS.md) · [Sync](docs/arquitetura/SYNC-OFFLINE.md) |
+| Critérios de segurança e qualidade | [QUALITY-GATES](docs/agents/QUALITY-GATES.md) · [SAFEGUARDS](docs/agents/SAFEGUARDS.md) |
+| Padrões arquiteturais e legais | [Arquitetura](docs/standards/ARCHITECTURE-CODE.md) · [Acessibilidade](docs/standards/ACCESSIBILITY-UI.md) · [Segurança](docs/standards/SECURITY-PRIVACY.md) · [Jurídico](docs/standards/LEGAL-COMPLIANCE.md) |
+| Continuidade entre agents | [HANDOFF](docs/agents/HANDOFF.md) |
+| Guia de alterações públicas | [CHANGELOG-GUIDE](docs/agents/CHANGELOG-GUIDE.md) |
+| Futuro modal de novidades | [NEWS-MODAL](docs/releases/NEWS-MODAL.md) |
+| Índice de todas as especificações | [Documentação](docs/INDEX.md) |
+| Contratos de design | [DESIGN-001](docs/design/DESIGN-001.md) e [DESIGN-004](docs/design/DESIGN-004.md) |
+| Marca e cor única | [BRAND-001](docs/brand/BRAND-001.md) e [THEME-001](docs/brand/THEME-001.md) |
+| Segurança/qualidade | [QUALITY-001](docs/qualidade/QUALIDADE.md) |
+| Decisões aceitas | [ADRs](docs/decisoes/README.md) |
 
-Leia [CONTRIBUTING.md](CONTRIBUTING.md) e [OPEN_SOURCE.md](OPEN_SOURCE.md). **A licença final ainda está em discussão; publicidade do repositório não significa licença irrestrita.** A imagem externa usada como referência não é reproduzida aqui.
+Leia [CONTRIBUTING.md](CONTRIBUTING.md) e [OPEN_SOURCE.md](OPEN_SOURCE.md). Código e marca ainda não possuem licença final aprovada. Imagens e fontes externas não devem ser distribuídas sem autorização.
+
+**Propostas novas não são decisões aceitas automaticamente.**

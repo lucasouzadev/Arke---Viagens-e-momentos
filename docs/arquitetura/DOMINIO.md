@@ -32,5 +32,9 @@
 owner / editor / viewer. Permissões granulares de custos, memórias, convites e exclusão ainda precisam de decisão.
 
 ## Futuro
+## Detalhamento proposto em M3
+
+A separação Pin/Place/Trip, `TripPinLink` candidato, isolamento pessoal/grupo, revisões e idempotência foi aprofundada em [M3-DATA-CONTRACT](M3-DATA-CONTRACT.md). Para controles por entidade veja [PERMISSIONS](PERMISSIONS.md); para mutações offline, [SYNC-OFFLINE](SYNC-OFFLINE.md). Essas propostas **não são schema/APIs aprovadas**.
+
 
 Estado de interface não é banco de dados. Sincronização exige versionamento, conflitos, isolamento por viagem e idempotência.

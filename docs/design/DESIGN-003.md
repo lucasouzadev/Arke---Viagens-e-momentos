@@ -2,17 +2,11 @@
 
 **Status:** princípios aprovados; métricas de tempo/geometry são hipóteses.
 
-## Paleta de exploração (não final)
+## Cor e aparência — direção revisada
 
-| Token | Cor | Aplicação |
-| --- | --- | --- |
-| Céu | #BCECF7 | mapa/ambiente claro |
-| Profundo | #254C5D | texto e Pin selecionado |
-| Papel | #FFFFFF | conteúdo principal |
-| Neutro | #F2F5F6 | superfícies secundárias |
-| Destaque | pendente | ações e estados |
+**Aprovado:** apenas **um azul opaco** como identidade; o restante da UI usa superfícies/textos do próprio sistema e acompanha automaticamente o tema do dispositivo. **Hex candidato:** `#4C728A` (a validar). Sem ciano auxiliar, salmão, paletas por tema, gradiente de marca ou filtro azul sobre mapa real.
 
-Criar escala dark, alto contraste e tokens semânticos antes de padronizar.
+O estudo anterior de vários tons foi **substituído** por [THEME-001](../brand/THEME-001.md) e [ADR-006](../decisoes/ADR-006.md). Liquid Glass continua nativo nos controles iOS, sem tornar a marca translúcida.
 
 ## iOS — Liquid
 

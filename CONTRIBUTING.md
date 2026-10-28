@@ -1,18 +1,22 @@
-# Como contribuir para o Arke
+# Contribuindo com o Arke
 
-**Nesta fase, apenas documentação, pesquisa e revisão de produto/design.** Não introduza código Swift/Kotlin, APIs ou CI executável sem decisão posterior.
+O Arke é um projeto **documentation-first**. Nesta fase, contribuições devem trabalhar especificações, conteúdo público, pesquisa e revisão, **sem código Swift/Kotlin, backend ou CI de app** até autorização.
 
-## Processo
+## Antes de abrir uma alteração
 
-1. Leia o [índice](docs/INDEX.md) e as decisões atuais.
-2. Descreva problema, alternativas, impactos nas duas plataformas e critérios de aceite.
-3. Preserve mapa-first, dois cartões, ausência de tab bar, relógio contextual, carrossel e conteúdo vertical.
-4. Inclua estados vazios, offline/erro, acessibilidade, responsividade e privacidade.
-5. Use somente imagens próprias ou autorizadas.
-6. Registre mudanças de arquitetura em ADRs e atualize índice e roadmap.
+1. Leia [AGENTS.md](AGENTS.md) e [ROADMAP](docs/ROADMAP.md). A execução de qualquer agent também exige [PROMPT-OBRIGATORIO](docs/agents/PROMPT-OBRIGATORIO.md), [QUALITY-GATES](docs/agents/QUALITY-GATES.md) e [SAFEGUARDS](docs/agents/SAFEGUARDS.md); documentos técnicos/jurídicos aplicam-se conforme risco.
+2. Consulte [STATUS](docs/STATUS.md), [HANDOFF](docs/agents/HANDOFF.md), [ADRs](docs/decisoes/README.md) e a especificação do problema.
+3. Estruture o trabalho com [TASK-CONTRACT](docs/agents/TASK-CONTRACT.md).
+4. Preserve mapa-first, dois cartões, ausência de tab bar, relógio/carrossel, natividade independente e **um azul opaco com tema do dispositivo**.
+5. Registre proposta de mudança de decisão em ADR; não simule aprovação.
+6. Mantenha branch/PR pequeno, reveja links e gere [HANDOFF](docs/agents/HANDOFF.md).
 
 ## Revisão
 
-Uma sugestão que introduza dashboard inicial, menu de abas, framework híbrido ou cofrinho transacional precisa de novo ADR e aprovação explícita.
+Veja [REVIEW-PROTOCOL](docs/agents/REVIEW-PROTOCOL.md) e [QUALITY-001](docs/qualidade/QUALIDADE.md). Toda tarefa avalia UX/UI, viewport, acessibilidade, segurança e impacto iOS/Android, mesmo que documente “não aplicável” com motivo. **Nunca afirme compilação ou teste E2E sem execução real.**
 
-Nunca envie tokens, Apple signing keys, keystores, dados privados ou logs com segredos.
+## Comunicação com pessoas
+
+Quando a alteração for perceptível ao usuário, sugerir nota em português simples segundo [CHANGELOG-GUIDE](docs/agents/CHANGELOG-GUIDE.md). Enquanto não há app, descrever **avanços do projeto**, não funcionalidades já disponíveis. O modal de novidades está [somente especificado](docs/releases/NEWS-MODAL.md).
+
+Não enviar tokens, chaves, perfis de assinatura, conteúdo privado ou obras sem licença ao repositório.
